@@ -13,7 +13,9 @@ svg{
 li{
   list-style-type:none;
 }
-
+a{
+  text-decoration:none;
+}
 `;
 
 const AppBox = styled.div``;
