@@ -7,6 +7,7 @@ const LgNavBox = styled.section`
   @media (min-width: 768px) {
     display: flex;
     justify-content: flex-end;
+    padding-right: 0.8rem;
     background-color: ghostwhite;
   }
 `;
@@ -20,11 +21,18 @@ const LgNavInner = styled.ul`
 `;
 
 const ListItem = styled.li`
+  padding: 0.9rem;
   & > a {
-    padding: 1rem;
+    /* padding: 0.2rem; */
     display: block;
     font-size: 0.8rem;
     font-weight: bold;
+    transition: color 0.2s;
+    color: #58595b;
+    letter-spacing: 1.1px;
+    :hover {
+      color: red;
+    }
   }
 `;
 

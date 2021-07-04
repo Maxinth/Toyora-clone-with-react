@@ -1,28 +1,30 @@
+// import SearchIcon from "@material-ui/icons/Search";
+// import EditIcon from "@material-ui/icons/Edit";
+
+import React from "react";
 interface LgTopItems {
   itemName: string;
-  withIcon: boolean;
+  withIcon?: boolean;
+  iconName?: React.ReactElement;
 }
 
 export const data: LgTopItems[] = [
   {
     itemName: "Search",
     withIcon: true,
+    // iconName: SearchIcon
   },
   {
     itemName: "FAQ",
-    withIcon: false,
   },
   {
     itemName: "Certified Used Vehicles",
-    withIcon: false,
   },
   {
     itemName: "Owners",
-    withIcon: false,
   },
   {
     itemName: "Espanol",
-    withIcon: false,
   },
   {
     itemName: "Set Location",
