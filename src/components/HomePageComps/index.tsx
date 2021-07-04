@@ -1,5 +1,6 @@
 import { HomeContainer } from "./styled";
 import Navbar from "./NavBar";
+
 const HomePage = () => {
   return (
     <HomeContainer>

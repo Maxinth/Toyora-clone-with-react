@@ -1,11 +1,14 @@
-import "./App.css";
 import Home from "./components/HomePageComps";
+import { GlobalStyle, AppBox } from "./AppStyled";
 
 function App() {
   return (
-    <div className="App">
-      <Home />
-    </div>
+    <>
+      <GlobalStyle />
+      <AppBox className="App">
+        <Home />
+      </AppBox>
+    </>
   );
 }
 
