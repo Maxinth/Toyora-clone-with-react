@@ -6,10 +6,14 @@ const LgTopItems = () => {
   return (
     <LgNavInner>
       {data.map((item) => {
-        const { itemName } = item;
+        const { itemName, withIcon, iconName } = item;
+
         return (
           <ListItem key={itemName}>
-            <Link to="/">{itemName}</Link>
+            <Link to="/">
+              {itemName}
+              {/* {withIcon && iconName} */}
+            </Link>
           </ListItem>
         );
       })}
