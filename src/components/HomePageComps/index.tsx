@@ -1,5 +1,11 @@
+import { HomeContainer } from "./styled";
+import Navbar from "./NavBar";
 const HomePage = () => {
-  return <div>home page parent Component</div>;
+  return (
+    <HomeContainer>
+      <Navbar />
+    </HomeContainer>
+  );
 };
 
 export default HomePage;
