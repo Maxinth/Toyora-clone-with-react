@@ -1,7 +1,11 @@
 import { LgNavBox } from "./styled";
-
+import LgTopItems from "./LgTopItems";
 const TopSectionOnLg = () => {
-  return <LgNavBox>top visible only on larger screen</LgNavBox>;
+  return (
+    <LgNavBox>
+      <LgTopItems />
+    </LgNavBox>
+  );
 };
 
 export default TopSectionOnLg;

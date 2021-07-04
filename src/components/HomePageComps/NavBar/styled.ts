@@ -1,12 +1,18 @@
 import styled from "styled-components";
 
 const Nav = styled.nav``;
-const LgNavBox = styled.div`
+const LgNavBox = styled.section`
   display: none;
+  width: 100%;
   @media (min-width: 768px) {
-    display: block;
+    display: flex;
+    justify-content: flex-end;
     background-color: ghostwhite;
   }
 `;
 
-export { Nav, LgNavBox };
+const LgNavInner = styled.div`
+  padding: 1rem;
+`;
+
+export { Nav, LgNavBox, LgNavInner };
