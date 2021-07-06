@@ -1,16 +1,17 @@
 import { RootState } from "../../appStore/store";
 import { useSelector, useDispatch } from "react-redux";
 import { decrement, increment } from "../../features/counter/counterSlice";
+import { MockBox, Button, ViewBox } from "./styled";
 
 const MockComponents = () => {
   const count = useSelector((state: RootState) => state.counter.value);
   const dispatch = useDispatch();
   return (
-    <div>
-      <button onClick={() => dispatch(increment())}>+</button>
-      <button onClick={() => dispatch(decrement())}>-</button>
-      <div>{count}</div>
-    </div>
+    <MockBox>
+      <Button onClick={() => dispatch(increment())}>+</Button>
+      <ViewBox>{count}</ViewBox>
+      <Button onClick={() => dispatch(decrement())}>-</Button>
+    </MockBox>
   );
 };
 
