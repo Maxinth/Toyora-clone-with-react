@@ -1,6 +1,7 @@
 import SearchIcon from "@material-ui/icons/Search";
 import EditIcon from "@material-ui/icons/Edit";
 
+// SEE COMMENTS
 interface LgTopItems {
   itemName: string;
   withIcon: boolean;
