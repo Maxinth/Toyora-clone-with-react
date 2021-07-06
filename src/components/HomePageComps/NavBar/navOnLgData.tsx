@@ -1,18 +1,17 @@
 import SearchIcon from "@material-ui/icons/Search";
 import EditIcon from "@material-ui/icons/Edit";
 
-// import { ComponentType } from "react";
 interface LgTopItems {
   itemName: string;
   withIcon: boolean;
-  iconName?: React.ReactNode;
+  iconName?: JSX.Element;
 }
 
 export const data: LgTopItems[] = [
   {
     itemName: "Search",
     withIcon: true,
-    iconName: SearchIcon,
+    iconName: <SearchIcon />,
   },
   {
     itemName: "FAQ",
@@ -33,6 +32,12 @@ export const data: LgTopItems[] = [
   {
     itemName: "Set Location",
     withIcon: true,
-    iconName: EditIcon,
+    iconName: <EditIcon />,
   },
 ];
+
+/*
+In a bid to resolve the material ui icon type issh,  I have converted this file from being a ts file to a tsx file so Ican
+use the Icon components in the array.
+
+*/
