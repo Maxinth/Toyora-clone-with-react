@@ -1,5 +1,5 @@
 import FlagImage from "../../../../assets/flag.jpg";
-import LogoImage from "../../../../assets/flag.jpg";
+import LogoImage from "../../../../assets/logo2.png";
 import { Image, LogoContainer } from "./styled";
 
 const Logo = () => {
