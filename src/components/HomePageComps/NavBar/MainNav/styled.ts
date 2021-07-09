@@ -4,6 +4,7 @@ const Container = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1rem 2rem;
 `;
 const Image = styled.img`
   object-fit: contain;
@@ -20,11 +21,10 @@ const LogoContainer = styled.section`
   align-items: center;
   position: relative;
   top: -43px;
-  
 `;
 
 const InnerContainer = styled.div`
-margin: 0 auto;
+  margin: 0 auto;
   max-width: 900px;
   width: 100%;
 `;
