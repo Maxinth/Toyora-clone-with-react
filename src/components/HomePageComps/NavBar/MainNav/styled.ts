@@ -12,16 +12,16 @@ const Image = styled.img`
   width: 50px;
   height: 50px;
   :first-child {
-    width: 150px;
-    height: 150px;
+    width: 40px;
+    height: 60px;
   }
 `;
 const LogoContainer = styled.section`
   display: flex;
   /* justify-content: center; */
   align-items: center;
-  position: relative;
-  top: -43px;
+  /* position: relative;
+  top: -43px; */
 `;
 
 const InnerContainer = styled.div`
@@ -29,7 +29,7 @@ const InnerContainer = styled.div`
   max-width: 900px;
   width: 100%;
   display: flex;
-  justify-content: center;
+
   align-items: center;
 `;
 
