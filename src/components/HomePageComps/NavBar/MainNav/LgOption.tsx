@@ -1,13 +1,16 @@
 import DropDownToggle from "./DropDownToggle";
 import { ListItem } from "./styled";
-import { FC } from "react";
+import { FC, useState } from "react";
 import { Items as Props } from "./data";
 
 const LgOption: FC<Props> = ({ optionName, withDropDown }) => {
+  const [isIconFlipped, setIsIconFlipped] = useState(false);
+  const doFlip = () => setIsIconFlipped(true);
+
   return (
-    <ListItem>
+    <ListItem onClick={() => doFlip()}>
       {optionName}
-      {withDropDown && <DropDownToggle />}
+      {withDropDown && <DropDownToggle flipState={isIconFlipped} />}
     </ListItem>
   );
 };

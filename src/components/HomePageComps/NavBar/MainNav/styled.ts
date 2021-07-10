@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Props as SpanIconProps } from "./DropDownToggle";
 
 const Container = styled.section`
   display: flex;
@@ -40,12 +41,12 @@ const LogoContainer = styled.section`
 
 const InnerContainer = styled.div`
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 1200px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.1rem 0.2rem;
+  padding: 0rem 0.5rem;
 `;
 
 const RightContainer = styled.div`
@@ -74,13 +75,22 @@ const LgRightContainer = styled.ul`
 
 const ListItem = styled.li`
   display: flex;
+  flex-direction: column;
   align-items: center;
   text-transform: capitalize;
   color: rgb(88, 89, 91);
   font-weight: bold;
   padding: 1rem;
+  cursor: pointer;
+  &:last-child {
+    background-color: red;
+    color: white;
+  }
+  @media (min-width: 812px) {
+    flex-direction: row;
+  }
 `;
-const Span = styled.span`
+const Span = styled.span<SpanIconProps>`
   svg {
     color: red;
   }

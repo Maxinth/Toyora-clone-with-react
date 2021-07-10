@@ -8,10 +8,12 @@ const Nav = styled.nav`
   left: 0;
   right: 0;
   top: 0; */
+  border: 1px solid black;
 `;
 const LgNavBox = styled.section`
   display: none;
   width: 100%;
+
   @media (min-width: 768px) {
     display: flex;
     justify-content: flex-end;
@@ -28,6 +30,8 @@ const LgNavInner = styled.ul`
   justify-content: center;
   align-items: center;
   font-family: "Roboto", sans-serif;
+  margin: 0 1rem 0 auto;
+  max-width: 900px;
 `;
 
 const ListItem = styled.li`
@@ -36,6 +40,7 @@ const ListItem = styled.li`
   align-items: center;
   padding: 0.6rem 0.2rem;
   transition: color 0.2s;
+
   & > a {
     /* padding: 0.2rem; */
     display: block;

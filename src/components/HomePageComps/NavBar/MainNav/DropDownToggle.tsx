@@ -1,9 +1,14 @@
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import { Span } from "./styled";
+import { FC } from "react";
 
-const DropDownToggle = () => {
+export interface Props {
+  flipState: boolean;
+}
+
+const DropDownToggle: FC<Props> = ({ flipState }) => {
   return (
-    <Span>
+    <Span flipState={flipState}>
       <ExpandMoreIcon />
     </Span>
   );
