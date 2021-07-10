@@ -63,4 +63,18 @@ const RightContainer = styled.div`
     display: none;
   }
 `;
-export { RightContainer, Container, Image, LogoContainer, InnerContainer };
+
+const LgRightContainer = styled.div`
+  display: none;
+  @media (min-width: 768px) {
+    display: flex;
+  }
+`;
+export {
+  RightContainer,
+  LgRightContainer,
+  Container,
+  Image,
+  LogoContainer,
+  InnerContainer,
+};
