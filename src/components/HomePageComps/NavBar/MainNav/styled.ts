@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { Props as SpanIconProps } from "./DropDownToggle";
 
 const Container = styled.section`
@@ -91,9 +91,19 @@ const ListItem = styled.li`
   }
 `;
 const Span = styled.span<SpanIconProps>`
-  svg {
+  > svg {
     color: red;
+    transition: transform 0.2s;
   }
+
+  // with the flipState props
+  ${({ flipState }) =>
+    flipState &&
+    css`
+      > svg {
+        transform: rotate(180deg);
+      }
+    `}
 `;
 export {
   RightContainer,
