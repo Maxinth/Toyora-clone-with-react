@@ -2,6 +2,12 @@ import styled from "styled-components";
 
 const Nav = styled.nav`
   /* padding: 0.8rem 0.4rem; */
+  /* position: fixed;
+  z-index: 200;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0; */
 `;
 const LgNavBox = styled.section`
   display: none;
@@ -9,7 +15,7 @@ const LgNavBox = styled.section`
   @media (min-width: 768px) {
     display: flex;
     justify-content: flex-end;
-    padding-right: 0.8rem;
+    padding-right: 0.9rem;
     background-color: ghostwhite;
     /* background-color: #333; */
     box-shadow: 1px 1px 3px grey;
