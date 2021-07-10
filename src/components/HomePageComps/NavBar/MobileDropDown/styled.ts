@@ -15,10 +15,11 @@ const ListItem = styled.li`
   padding: 1rem;
   font-size: 1.1rem;
   font-weight: bolder;
+  cursor: pointer;
   /* border-top: 1px solid grey; */
   border-bottom: 1px solid grey;
   > svg {
-    font-size: 1.5rem;
+    font-size: 1.1rem !important;
   }
 `;
 export { Container, ListContainer, ListItem };

@@ -1,13 +1,14 @@
-import { Container, ListContainer, ListItem } from "./styled";
-import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
+import { Container, ListContainer } from "./styled";
+import DropOption from "./DropOption";
+import { data } from "./data";
 
 const MobileDropDown = () => {
   return (
     <Container>
       <ListContainer>
-        <ListItem>
-          Vehicles <ArrowForwardIosIcon />
-        </ListItem>
+        {data.map((item) => {
+          return <DropOption key={item.itemName} {...item} />;
+        })}
       </ListContainer>
     </Container>
   );
