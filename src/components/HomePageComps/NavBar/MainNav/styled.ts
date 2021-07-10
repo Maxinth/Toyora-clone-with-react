@@ -64,10 +64,24 @@ const RightContainer = styled.div`
   }
 `;
 
-const LgRightContainer = styled.div`
+const LgRightContainer = styled.ul`
+  font-family: "Roboto", sans-serif;
   display: none;
   @media (min-width: 768px) {
     display: flex;
+  }
+`;
+
+const ListItem = styled.li`
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  color: rgb(88, 89, 91);
+  font-weight: bold;
+`;
+const Span = styled.span`
+  svg {
+    color: red;
   }
 `;
 export {
@@ -77,4 +91,6 @@ export {
   Image,
   LogoContainer,
   InnerContainer,
+  ListItem,
+  Span,
 };
