@@ -78,6 +78,7 @@ const ListItem = styled.li`
   text-transform: capitalize;
   color: rgb(88, 89, 91);
   font-weight: bold;
+  padding: 1rem;
 `;
 const Span = styled.span`
   svg {

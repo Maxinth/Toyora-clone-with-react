@@ -1,15 +1,13 @@
-import { LgRightContainer, ListItem } from "./styled";
-import DropDownToggle from "./DropDownToggle";
+import { LgRightContainer } from "./styled";
+import LgOption from "./LgOption";
 import { data } from "./data";
 
 const RightOptionsOnLg = () => {
-  console.log(data);
   return (
     <LgRightContainer>
-      <ListItem>
-        select vehicle
-        <DropDownToggle />
-      </ListItem>
+      {data.map((item) => {
+        return <LgOption key={item.optionName} {...item} />;
+      })}
     </LgRightContainer>
   );
 };

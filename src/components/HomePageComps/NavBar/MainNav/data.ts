@@ -1,4 +1,4 @@
-interface Items {
+export interface Items {
   optionName: string;
   withDropDown: boolean;
 }
