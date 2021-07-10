@@ -82,6 +82,7 @@ const ListItem = styled.li`
   font-weight: bold;
   padding: 1rem;
   cursor: pointer;
+  font-size: 0.8rem;
   &:last-child {
     background-color: red;
     color: white;
