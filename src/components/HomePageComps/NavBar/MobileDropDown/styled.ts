@@ -1,7 +1,23 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
-const Container = styled.section`
+interface ContainerProps {
+  isShown: boolean;
+}
+
+const Container = styled.section<ContainerProps>`
   padding: 0.2rem 1rem;
+  transition: transform 0.5s;
+  transform: translateY(-140%);
+  height: 100%;
+  margin-top: 5rem;
+  ${({ isShown }) =>
+    isShown &&
+    css`
+      transform: translateY(5%);
+    `}
+  @media (min-width: 768px) {
+    display: none;
+  }
 `;
 const ListContainer = styled.ul`
   font-family: "Roboto", sans-serif;

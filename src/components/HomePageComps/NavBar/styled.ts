@@ -2,13 +2,14 @@ import styled from "styled-components";
 
 const Nav = styled.nav`
   /* padding: 0.8rem 0.4rem; */
-  /* position: fixed;
-  z-index: 200;
+  position: fixed;
+  z-index: 500;
   width: 100%;
   left: 0;
   right: 0;
-  top: 0; */
-  border: 1px solid black;
+  top: 0;
+  background-color: ghostwhite;
+  box-shadow: 1px 2px 2px ghostwhite;
 `;
 const LgNavBox = styled.section`
   display: none;
