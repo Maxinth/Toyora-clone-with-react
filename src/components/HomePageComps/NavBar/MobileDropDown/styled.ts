@@ -20,6 +20,7 @@ const ListItem = styled.li`
   border-bottom: 1px solid grey;
   > svg {
     font-size: 1.1rem !important;
+    color: red;
   }
 `;
 export { Container, ListContainer, ListItem };
