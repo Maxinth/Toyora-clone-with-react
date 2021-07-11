@@ -33,6 +33,7 @@ const ListItem = styled.li`
   font-size: 1.1rem;
   font-weight: bolder;
   cursor: pointer;
+  text-transform: capitalize;
   /* border-top: 1px solid grey; */
   border-bottom: 1px solid grey;
   > svg {
