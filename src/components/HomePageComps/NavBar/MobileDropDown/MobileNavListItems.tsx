@@ -1,11 +1,19 @@
 import DropOption from "./DropOption";
-import { data } from "./data";
+import { DropOptions } from "./data";
 import { ListContainer } from "./styled";
+import { FC } from "react";
+// import { data } from "./data";
 
-const MobileNavListItems = () => {
+interface Props {
+  itemName: string;
+  withForwardArrow: boolean;
+}
+[];
+
+const MobileNavListItems: FC<Props> = ({ data }) => {
   return (
     <ListContainer>
-      {data.map((item) => {
+      {data.map((item: DropOptions) => {
         return <DropOption key={item.itemName} {...item} />;
       })}
     </ListContainer>
