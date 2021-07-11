@@ -39,4 +39,6 @@ const ListItem = styled.li`
     color: red;
   }
 `;
-export { Container, ListContainer, ListItem };
+
+const NewViewContainer = styled.div``;
+export { Container, ListContainer, ListItem, NewViewContainer };
