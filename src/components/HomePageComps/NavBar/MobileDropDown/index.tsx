@@ -3,12 +3,14 @@ import MobileNavListItems from "./MobileNavListItems";
 import { useSelector } from "react-redux";
 import { RootState } from "../../../../appStore/store";
 import { data } from "./data";
+import AllVehicles from "./Vehicles/AllVehicles";
 
 const MobileDropDown = () => {
   const isInView = useSelector((state: RootState) => state.hamburger.isOpen);
   return (
     <Container isShown={isInView}>
       <MobileNavListItems items={data} />
+      <AllVehicles />
     </Container>
   );
 };

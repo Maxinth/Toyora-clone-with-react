@@ -1,7 +1,12 @@
-import React from "react";
+import { AvContainer } from "./styled";
+import NewViewHeader from "../NewViewHeader";
 
 const AllVehicles = () => {
-  return <div></div>;
+  return (
+    <AvContainer>
+      <NewViewHeader title="vehicles" />
+    </AvContainer>
+  );
 };
 
 export default AllVehicles;

@@ -40,5 +40,9 @@ const ListItem = styled.li`
   }
 `;
 
-const NewViewContainer = styled.div``;
+const NewViewContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
 export { Container, ListContainer, ListItem, NewViewContainer };
