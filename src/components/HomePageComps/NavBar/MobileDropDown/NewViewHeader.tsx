@@ -1,17 +1,19 @@
 import { NewViewContainer } from "./styled";
 import { FC } from "react";
-import CloseIcon from "@material-ui/icons/Close";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
-
+import DropMenuToggle from "../MainNav/DropMenuToggle";
+import { useDispatch } from "react-redux";
+import { backFromAllVehicles } from "../../../../features/MobileDropDown/vehiclesSlice";
 interface Props {
   title: string;
 }
 const NewViewHeader: FC<Props> = ({ title }) => {
+  const dispatch = useDispatch();
   return (
     <NewViewContainer>
-      <ArrowBackIosIcon />
+      <ArrowBackIosIcon onClick={() => dispatch(backFromAllVehicles())} />
       {title}
-      <CloseIcon />
+      <DropMenuToggle />
     </NewViewContainer>
   );
 };

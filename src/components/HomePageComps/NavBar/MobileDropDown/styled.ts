@@ -10,6 +10,7 @@ const Container = styled.section<ContainerProps>`
   transform: translateY(-140%);
   height: 100%;
   margin-top: 5rem;
+  position: relative;
   ${({ isShown }) =>
     isShown &&
     css`
@@ -44,5 +45,14 @@ const NewViewContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-transform: uppercase;
+  /* font-size: 0.8rem; */
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  & svg {
+    color: #333;
+    font-size: 1.7rem;
+  }
 `;
 export { Container, ListContainer, ListItem, NewViewContainer };
