@@ -29,8 +29,9 @@ const ListItem = styled.li`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 1rem 1rem;
   font-size: 1.1rem;
+  margin-left: 1rem;
   font-weight: bolder;
   cursor: pointer;
   text-transform: capitalize;
@@ -51,7 +52,7 @@ const NewViewContainer = styled.div`
   padding: 0.5rem 2rem;
   color: #333;
   font-family: "Roboto", sans-serif;
-  font-weight: bold;
+  font-weight: bolder;
   & svg {
     color: #333;
     font-size: 1.7rem;
