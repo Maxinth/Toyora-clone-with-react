@@ -9,7 +9,7 @@ const ShoppingTools = () => {
   );
   return (
     <ShoppingToolsContainer isInView={isInView}>
-      <NewViewHeader title="shopping tools" />
+      <NewViewHeader title="Shopping Tools" />
     </ShoppingToolsContainer>
   );
 };

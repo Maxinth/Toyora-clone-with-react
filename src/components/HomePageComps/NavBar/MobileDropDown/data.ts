@@ -58,11 +58,11 @@ export const goBackCB = (
   switch (title) {
     case "Vehicles":
       callbackFunction = () => vehiclesCallback();
-      console.log("back from vehicles view");
+      // console.log("back from vehicles view");
       break;
     case "Shopping Tools":
       callbackFunction = () => shoppingCB();
-      console.log("back from shoppingLIST view");
+      // console.log("back from shoppingLIST view");
       break;
     default:
       callbackFunction = () => "default message";

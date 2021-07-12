@@ -11,8 +11,7 @@ interface Props {
 }
 const NewViewHeader: FC<Props> = ({ title }) => {
   const dispatch = useDispatch();
-  // const arrowCallBack = () =>
-  //   goBackCB(title, backFromAllVehicles, backFromAllShoppingTools);
+
   return (
     <NewViewContainer>
       <ArrowBackIosIcon

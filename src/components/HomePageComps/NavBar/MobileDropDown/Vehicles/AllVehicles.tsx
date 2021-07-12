@@ -11,7 +11,7 @@ const AllVehicles = () => {
   );
   return (
     <AvContainer isInView={isInView}>
-      <NewViewHeader title="vehicles" />
+      <NewViewHeader title="Vehicles" />
       <MobileNavListItems items={vehiclesList} />
     </AvContainer>
   );
