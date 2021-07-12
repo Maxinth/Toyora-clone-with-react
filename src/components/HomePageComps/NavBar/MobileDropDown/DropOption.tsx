@@ -9,17 +9,15 @@ import { useDispatch } from "react-redux";
 const DropOption: FC<Props> = ({ itemName, withForwardArrow }) => {
   const dispatch = useDispatch();
 
+  const goForwardCB = () => {
+    return getCallback(itemName, goToAllVehicles, showAllShoppingTools);
+  };
+
   return (
     <ListItem>
       {itemName}
       {withForwardArrow && (
-        <ArrowForwardIosIcon
-          onClick={() =>
-            dispatch(
-              getCallback(itemName, goToAllVehicles, showAllShoppingTools)
-            )
-          }
-        />
+        <ArrowForwardIosIcon onClick={() => dispatch(goForwardCB())} />
       )}
     </ListItem>
   );

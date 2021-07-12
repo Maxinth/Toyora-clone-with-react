@@ -8,7 +8,7 @@ const Container = styled.section<ContainerProps>`
   padding: 0.2rem 1rem;
   transition: transform 0.5s;
   transform: translateY(-140%);
-  height: 100%;
+  height: 100vh;
   margin-top: 5rem;
   position: relative;
   ${({ isShown }) =>
