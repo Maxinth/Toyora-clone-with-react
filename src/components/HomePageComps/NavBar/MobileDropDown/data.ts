@@ -25,3 +25,19 @@ export const data: DropOptions[] = [
     withForwardArrow: true,
   },
 ];
+
+export const getCallback = (
+  itemName: string,
+  vehiclesCallback: Function
+): Function => {
+  let callbackFunction: Function;
+  switch (itemName) {
+    case "Vehicles":
+      callbackFunction = () => vehiclesCallback();
+      break;
+    default:
+      callbackFunction = () => "default message";
+      break;
+  }
+  return callbackFunction();
+};

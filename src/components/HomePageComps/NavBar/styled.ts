@@ -8,7 +8,7 @@ const Nav = styled.nav`
   left: 0;
   right: 0;
   top: 0;
-  background-color: ghostwhite;
+  background-color: white;
   box-shadow: 1px 2px 2px ghostwhite;
 `;
 const LgNavBox = styled.section`

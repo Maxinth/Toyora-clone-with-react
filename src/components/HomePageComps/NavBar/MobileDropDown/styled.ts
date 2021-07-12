@@ -35,7 +35,7 @@ const ListItem = styled.li`
   cursor: pointer;
   text-transform: capitalize;
   /* border-top: 1px solid grey; */
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid ghostwhite;
   > svg {
     font-size: 1.1rem !important;
     color: red;
@@ -48,12 +48,17 @@ const NewViewContainer = styled.div`
   align-items: center;
   text-transform: uppercase;
   /* font-size: 0.8rem; */
+  padding: 0.5rem 2rem;
   color: #333;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   & svg {
     color: #333;
     font-size: 1.7rem;
+  }
+
+  & svg:last-child {
+    display: none;
   }
 `;
 export { Container, ListContainer, ListItem, NewViewContainer };
