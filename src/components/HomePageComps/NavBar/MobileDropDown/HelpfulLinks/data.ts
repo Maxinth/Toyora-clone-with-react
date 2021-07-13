@@ -1,0 +1,15 @@
+export const data: string[] = [
+  "Safety Recalls & Service campaigns",
+  "dealers",
+  "toyota financial services",
+  "ToyotaCare",
+  "Toyota Safety Sense",
+  "Audio Multimedia",
+  "Mobile Phone Compatibility",
+  "Connected Services",
+  "Toyota Certified Collision Centers",
+  "Toyota Mobility Feature",
+  "Toyota Fleet",
+  "Toyota Rent A Car",
+  "Car Tips & Advice",
+];
