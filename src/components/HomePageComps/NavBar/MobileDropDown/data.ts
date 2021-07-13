@@ -86,3 +86,5 @@ export const goBackCB = (
   }
   return callbackFunction();
 };
+
+export const mainDropFurtherDetails: string[] = ["FAQ", "Espanol", "Careers"];
