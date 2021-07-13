@@ -50,6 +50,8 @@ const NewViewContainer = styled.div`
   text-transform: uppercase;
   /* font-size: 0.8rem; */
   padding: 0.5rem 2rem;
+  position: relative;
+  top: -1rem;
   color: #333;
   font-family: "Roboto", sans-serif;
   font-weight: bolder;
@@ -58,8 +60,12 @@ const NewViewContainer = styled.div`
     font-size: 1.7rem;
   }
 
+  & svg:first-child {
+    color: red;
+  }
   & svg:last-child {
     display: none;
+    visibility: none;
   }
 `;
 export { Container, ListContainer, ListItem, NewViewContainer };

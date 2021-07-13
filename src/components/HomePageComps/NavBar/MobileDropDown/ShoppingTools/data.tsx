@@ -15,7 +15,7 @@ export interface ShopTools {
   iconName: JSX.Element;
 }
 
-export const data: ShopTools[] = [
+const data: ShopTools[] = [
   {
     itemName: "build & price",
     iconName: <SettingsIcon />,
@@ -61,3 +61,10 @@ export const data: ShopTools[] = [
     iconName: <CompareArrowsIcon />,
   },
 ];
+
+const moreDetails: string[] = [
+  "Buy Parts & Accessories",
+  "Toyota Certified User Vehicles",
+];
+
+export { moreDetails, data };
