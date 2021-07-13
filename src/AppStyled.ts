@@ -18,6 +18,10 @@ a{
 }
 `;
 
-const AppBox = styled.div``;
+const AppBox = styled.div`
+  max-width: 1400px;
+  width: 100%;
+  overflow: hidden;
+`;
 
 export { GlobalStyle, AppBox };

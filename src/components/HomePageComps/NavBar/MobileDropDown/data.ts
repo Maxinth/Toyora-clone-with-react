@@ -31,7 +31,7 @@ export const getCallback = (
   itemName: string,
   vehiclesCallback: Function,
   showAllShoppingTools: Function,
-  showHelpfulLinks: Function
+  goToHelpFulLinks: Function
 ): Function => {
   let callbackFunction: Function;
   switch (itemName) {
@@ -43,7 +43,7 @@ export const getCallback = (
       callbackFunction = () => showAllShoppingTools();
       break;
     case "Helpful Links":
-      callbackFunction = () => showHelpfulLinks();
+      callbackFunction = () => goToHelpFulLinks();
       break;
     default:
       callbackFunction = () => "default message";
