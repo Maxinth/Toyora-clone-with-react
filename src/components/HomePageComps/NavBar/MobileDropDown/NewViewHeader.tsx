@@ -6,6 +6,7 @@ import { useDispatch } from "react-redux";
 import { backFromAllVehicles } from "../../../../features/MobileDropDown/vehiclesSlice";
 import { backFromAllShoppingTools } from "../../../../features/MobileDropDown/shoppingToolsSlice";
 import { backFromHelpFulLinks } from "../../../../features/MobileDropDown/helpFulLinksSlice";
+import { backFromAllOwners } from "../../../../features/MobileDropDown/ownersSlice";
 import { goBackCB } from "./data";
 interface Props {
   title: string;
@@ -17,7 +18,8 @@ const NewViewHeader: FC<Props> = ({ title }) => {
       title,
       backFromAllVehicles,
       backFromAllShoppingTools,
-      backFromHelpFulLinks
+      backFromHelpFulLinks,
+      backFromAllOwners
     );
   };
 
