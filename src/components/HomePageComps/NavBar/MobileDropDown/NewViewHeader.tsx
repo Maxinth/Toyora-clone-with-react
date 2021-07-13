@@ -5,6 +5,7 @@ import DropMenuToggle from "../MainNav/DropMenuToggle";
 import { useDispatch } from "react-redux";
 import { backFromAllVehicles } from "../../../../features/MobileDropDown/vehiclesSlice";
 import { backFromAllShoppingTools } from "../../../../features/MobileDropDown/shoppingToolsSlice";
+import { backFromHelpFulLinks } from "../../../../features/MobileDropDown/helpFulLinksSlice";
 import { goBackCB } from "./data";
 interface Props {
   title: string;
@@ -12,7 +13,12 @@ interface Props {
 const NewViewHeader: FC<Props> = ({ title }) => {
   const dispatch = useDispatch();
   const goBackOneStepCB = () => {
-    return goBackCB(title, backFromAllVehicles, backFromAllShoppingTools);
+    return goBackCB(
+      title,
+      backFromAllVehicles,
+      backFromAllShoppingTools,
+      backFromHelpFulLinks
+    );
   };
 
   return (

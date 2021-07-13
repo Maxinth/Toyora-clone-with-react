@@ -3,6 +3,7 @@ import HelpLists from "./HelpLists";
 import NewViewHeader from "../NewViewHeader";
 import { RootState } from "../../../../../appStore/store";
 import { useSelector } from "react-redux";
+import { data } from "./data";
 
 const HelpfulLinks = () => {
   const isInView = useSelector(
@@ -11,7 +12,7 @@ const HelpfulLinks = () => {
   return (
     <HelpLinksContainer isInView={isInView}>
       <NewViewHeader title="Helpful Links" />
-      <HelpLists />
+      <HelpLists data={data} />
     </HelpLinksContainer>
   );
 };

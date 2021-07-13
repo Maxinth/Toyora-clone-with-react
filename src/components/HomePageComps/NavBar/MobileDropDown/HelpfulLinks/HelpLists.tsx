@@ -1,7 +1,11 @@
 import { ListItem } from "./styled";
-import { data } from "./data";
+import { FC } from "react";
 
-const HelpLists = () => {
+interface Props {
+  data: string[];
+}
+
+const HelpLists: FC<Props> = ({ data }) => {
   return (
     <>
       {data.map((item: string) => (

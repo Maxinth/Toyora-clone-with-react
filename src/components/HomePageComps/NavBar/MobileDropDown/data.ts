@@ -56,17 +56,22 @@ export const getCallback = (
 export const goBackCB = (
   title: string,
   vehiclesCallback: Function,
-  shoppingCB: Function
+  shoppingCB: Function,
+  backFromHelpFulLinks: Function
 ): Function => {
   let callbackFunction: Function;
   switch (title) {
     case "Vehicles":
       callbackFunction = () => vehiclesCallback();
-      // console.log("back from vehicles view");
+
       break;
     case "Shopping Tools":
       callbackFunction = () => shoppingCB();
-      // console.log("back from shoppingLIST view");
+
+      break;
+    case "Helpful Links":
+      callbackFunction = () => backFromHelpFulLinks();
+
       break;
     default:
       callbackFunction = () => "default message";
