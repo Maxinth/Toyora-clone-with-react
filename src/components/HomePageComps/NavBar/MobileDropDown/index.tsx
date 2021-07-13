@@ -6,6 +6,8 @@ import { data } from "./data";
 import AllVehicles from "./Vehicles/AllVehicles";
 import ShoppingTools from "./ShoppingTools";
 import HelpfulLinks from "./HelpfulLinks";
+import Owners from "./Owners";
+
 const MobileDropDown = () => {
   const isInView = useSelector((state: RootState) => state.hamburger.isOpen);
   return (
@@ -14,6 +16,7 @@ const MobileDropDown = () => {
       <AllVehicles />
       <ShoppingTools />
       <HelpfulLinks />
+      <Owners />
     </Container>
   );
 };
