@@ -5,6 +5,7 @@ import { DropOptions as Props, getCallback } from "./data";
 import { goToAllVehicles } from "../../../../features/MobileDropDown/vehiclesSlice";
 import { showAllShoppingTools } from "../../../../features/MobileDropDown/shoppingToolsSlice";
 import { goToHelpFulLinks } from "../../../../features/MobileDropDown/helpFulLinksSlice";
+import { goToAllOwners } from "../../../../features/MobileDropDown/ownersSlice";
 import { useDispatch } from "react-redux";
 
 const DropOption: FC<Props> = ({ itemName, withForwardArrow }) => {
@@ -15,7 +16,8 @@ const DropOption: FC<Props> = ({ itemName, withForwardArrow }) => {
       itemName,
       goToAllVehicles,
       showAllShoppingTools,
-      goToHelpFulLinks
+      goToHelpFulLinks,
+      goToAllOwners
     );
   };
 

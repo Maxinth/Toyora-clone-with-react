@@ -31,7 +31,8 @@ export const getCallback = (
   itemName: string,
   vehiclesCallback: Function,
   showAllShoppingTools: Function,
-  goToHelpFulLinks: Function
+  goToHelpFulLinks: Function,
+  goToAllOwners: Function
 ): Function => {
   let callbackFunction: Function;
   switch (itemName) {
@@ -45,6 +46,9 @@ export const getCallback = (
     case "Helpful Links":
       callbackFunction = () => goToHelpFulLinks();
       break;
+    case "Owners":
+      callbackFunction = () => goToAllOwners();
+      break;
     default:
       callbackFunction = () => "default message";
       break;
@@ -57,8 +61,10 @@ export const goBackCB = (
   title: string,
   vehiclesCallback: Function,
   shoppingCB: Function,
-  backFromHelpFulLinks: Function
+  backFromHelpFulLinks: Function,
+  backFromAllOwners: Function
 ): Function => {
+  // callback based on string
   let callbackFunction: Function;
   switch (title) {
     case "Vehicles":
@@ -67,11 +73,12 @@ export const goBackCB = (
       break;
     case "Shopping Tools":
       callbackFunction = () => shoppingCB();
-
       break;
     case "Helpful Links":
       callbackFunction = () => backFromHelpFulLinks();
-
+      break;
+    case "Owners":
+      callbackFunction = () => backFromAllOwners();
       break;
     default:
       callbackFunction = () => "default message";
