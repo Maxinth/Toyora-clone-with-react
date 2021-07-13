@@ -2,12 +2,14 @@ import { configureStore } from "@reduxjs/toolkit";
 import hamburgerReducer from "../features/MobileDropDown/mobileDropDownSlice";
 import vehiclesReducer from "../features/MobileDropDown/vehiclesSlice";
 import shoppingToolsReducer from "../features/MobileDropDown/shoppingToolsSlice";
+import helpfulLinksReducer from "../features/MobileDropDown/helpFulLinksSlice";
 
 export const store = configureStore({
   reducer: {
     hamburger: hamburgerReducer,
     vehicles: vehiclesReducer,
     shoppingTools: shoppingToolsReducer,
+    helpFulLinks: helpfulLinksReducer,
   },
 });
 

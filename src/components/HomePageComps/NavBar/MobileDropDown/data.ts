@@ -30,7 +30,8 @@ export const data: DropOptions[] = [
 export const getCallback = (
   itemName: string,
   vehiclesCallback: Function,
-  showAllShoppingTools: Function
+  showAllShoppingTools: Function,
+  showHelpfulLinks: Function
 ): Function => {
   let callbackFunction: Function;
   switch (itemName) {
@@ -40,6 +41,9 @@ export const getCallback = (
       break;
     case "Shopping Tools":
       callbackFunction = () => showAllShoppingTools();
+      break;
+    case "Helpful Links":
+      callbackFunction = () => showHelpfulLinks();
       break;
     default:
       callbackFunction = () => "default message";
