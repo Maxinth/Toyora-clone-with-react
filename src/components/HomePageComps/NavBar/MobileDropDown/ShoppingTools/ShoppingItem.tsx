@@ -5,8 +5,7 @@ import { FC } from "react";
 const ShoppingItem: FC<Props> = ({ itemName, iconName }) => {
   return (
     <ShopListItem>
-      <Name> {itemName}</Name>
-      {iconName}
+      {iconName} <Name> {itemName}</Name>
     </ShopListItem>
   );
 };
