@@ -18,3 +18,17 @@ const AllVehicles = () => {
 };
 
 export default AllVehicles;
+
+/*
+
+convert <AvContainer isInView={isInView}>
+           <NewViewHeader title="Vehicles" />
+          <MobileNavListItems items={vehiclesList} />
+      </AvContainer>
+
+      into a layout component where {children} is the difference  and use it in 
+      helpfullinks, owners, shoppingtools,and Vehicles
+
+
+
+*/
