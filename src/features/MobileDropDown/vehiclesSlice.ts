@@ -62,7 +62,7 @@ export const vehiclesSlice = createSlice({
       state.vehiclesInView.specialEditions = true;
     },
 
-    backToVehiclesViewFromSubView: (state) => {
+    backToAllVehiclesViewFromAnySubView: (state) => {
       state.vehiclesInView.cars = false;
       state.vehiclesInView.trucks = false;
       state.vehiclesInView.crossOver = false;
@@ -83,7 +83,7 @@ export const {
   showHybrid,
   showUpComingVehicles,
   showSpecialEditions,
-  backToVehiclesViewFromSubView,
+  backToAllVehiclesViewFromAnySubView,
 } = vehiclesSlice.actions;
 
 export default vehiclesSlice.reducer;

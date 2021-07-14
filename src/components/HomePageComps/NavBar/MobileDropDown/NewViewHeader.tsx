@@ -5,7 +5,7 @@ import DropMenuToggle from "../MainNav/DropMenuToggle";
 import { useDispatch } from "react-redux";
 import {
   backFromAllVehicles,
-  backToVehiclesViewFromSubView,
+  backToAllVehiclesViewFromAnySubView,
 } from "../../../../features/MobileDropDown/vehiclesSlice";
 import { backFromAllShoppingTools } from "../../../../features/MobileDropDown/shoppingToolsSlice";
 import { backFromHelpFulLinks } from "../../../../features/MobileDropDown/helpFulLinksSlice";
@@ -23,7 +23,7 @@ const NewViewHeader: FC<Props> = ({ title }) => {
       backFromAllShoppingTools,
       backFromHelpFulLinks,
       backFromAllOwners,
-      backToVehiclesViewFromSubView
+      backToAllVehiclesViewFromAnySubView
     );
   };
 
