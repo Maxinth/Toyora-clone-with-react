@@ -32,7 +32,13 @@ export const getCallback = (
   vehiclesCallback: Function,
   showAllShoppingTools: Function,
   goToHelpFulLinks: Function,
-  goToAllOwners: Function
+  goToAllOwners: Function,
+  showCars: Function,
+  showTrucks: Function,
+  showCrossOver: Function,
+  showHybrid: Function,
+  showUpComingVehicles: Function,
+  showSpecialEditions: Function
 ): Function => {
   let callbackFunction: Function;
   switch (itemName) {
@@ -48,6 +54,21 @@ export const getCallback = (
       break;
     case "Owners":
       callbackFunction = () => goToAllOwners();
+      break;
+    case "cars & minivan":
+      callbackFunction = () => showCars();
+      break;
+    case "trucks":
+      callbackFunction = () => showTrucks();
+      break;
+    case "crossovers & SUVs":
+      callbackFunction = () => showCrossOver();
+      break;
+    case "hybrid & fuel cell":
+      callbackFunction = () => showHybrid();
+      break;
+    case "upcoming vehicles":
+      callbackFunction = () => showUpComingVehicles();
       break;
     default:
       callbackFunction = () => "default message";
@@ -69,7 +90,6 @@ export const goBackCB = (
   switch (title) {
     case "Vehicles":
       callbackFunction = () => vehiclesCallback();
-
       break;
     case "Shopping Tools":
       callbackFunction = () => shoppingCB();

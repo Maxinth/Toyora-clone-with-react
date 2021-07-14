@@ -36,10 +36,44 @@ export const vehiclesSlice = createSlice({
     backFromAllVehicles: (state) => {
       state.showAllVehicles = false;
     },
+
+    // show Options from vehicles - when goToAllVehicles runs
+
+    showCars: (state) => {
+      state.vehiclesInView.cars = true;
+    },
+
+    showTrucks: (state) => {
+      state.vehiclesInView.trucks = true;
+    },
+
+    showCrossOver: (state) => {
+      state.vehiclesInView.crossOver = true;
+    },
+    showHybrid: (state) => {
+      state.vehiclesInView.hybrid = true;
+    },
+
+    showUpComingVehicles: (state) => {
+      state.vehiclesInView.upComingVehicles = true;
+    },
+
+    showSpecialEditions: (state) => {
+      state.vehiclesInView.specialEditions = true;
+    },
   },
 });
 
 // Action creators are generated for each case reducer function
-export const { goToAllVehicles, backFromAllVehicles } = vehiclesSlice.actions;
+export const {
+  goToAllVehicles,
+  backFromAllVehicles,
+  showCars,
+  showTrucks,
+  showCrossOver,
+  showHybrid,
+  showUpComingVehicles,
+  showSpecialEditions,
+} = vehiclesSlice.actions;
 
 export default vehiclesSlice.reducer;
