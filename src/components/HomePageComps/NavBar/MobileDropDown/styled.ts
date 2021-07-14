@@ -11,6 +11,12 @@ const Container = styled.section<ContainerProps>`
   height: 100vh;
   margin-top: 5rem;
   position: relative;
+  /* position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 600; */
+  /* background-color: white; */
   ${({ isShown }) =>
     isShown &&
     css`
@@ -22,17 +28,17 @@ const Container = styled.section<ContainerProps>`
 `;
 const ListContainer = styled.ul`
   font-family: "Roboto", sans-serif;
-  padding: 0 1rem;
+  padding: 0 2rem;
 `;
 
 const ListItem = styled.li`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1rem;
-  font-size: 1.1rem;
-  margin-left: 1rem;
-  font-weight: bolder;
+  padding: 1rem 0.5rem;
+  font-size: 1rem;
+  /* margin-left: 1rem; */
+  font-weight: 500;
   cursor: pointer;
   text-transform: capitalize;
   /* border-top: 1px solid grey; */
@@ -48,10 +54,11 @@ const NewViewContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   text-transform: uppercase;
-  /* font-size: 0.8rem; */
+
   padding: 0.5rem 2rem;
   position: relative;
   top: -1rem;
+
   color: #333;
   font-family: "Roboto", sans-serif;
   font-weight: bolder;

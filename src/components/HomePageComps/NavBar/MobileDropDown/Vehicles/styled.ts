@@ -11,7 +11,7 @@ const AvContainer = styled.section<AvProps>`
   top: 0;
   left: 0;
   right: 0;
-  margin-top: -0.5rem;
+  margin-top: -0.1rem;
   height: 100vh;
   z-index: 300;
   ${({ isInView }) =>

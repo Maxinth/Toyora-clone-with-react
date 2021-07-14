@@ -10,6 +10,7 @@ const Nav = styled.nav`
   top: 0;
   background-color: white;
   box-shadow: 1px 2px 2px ghostwhite;
+  border: 1px solid red;
 `;
 const LgNavBox = styled.section`
   display: none;
