@@ -2,7 +2,15 @@ import { ListItem } from "./styled";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import { FC } from "react";
 import { DropOptions as Props, getCallback } from "./data";
-import { goToAllVehicles } from "../../../../features/MobileDropDown/vehiclesSlice";
+import {
+  goToAllVehicles,
+  showCars,
+  showTrucks,
+  showCrossOver,
+  showHybrid,
+  showUpComingVehicles,
+  showSpecialEditions,
+} from "../../../../features/MobileDropDown/vehiclesSlice";
 import { showAllShoppingTools } from "../../../../features/MobileDropDown/shoppingToolsSlice";
 import { goToHelpFulLinks } from "../../../../features/MobileDropDown/helpFulLinksSlice";
 import { goToAllOwners } from "../../../../features/MobileDropDown/ownersSlice";
@@ -17,7 +25,13 @@ const DropOption: FC<Props> = ({ itemName, withForwardArrow }) => {
       goToAllVehicles,
       showAllShoppingTools,
       goToHelpFulLinks,
-      goToAllOwners
+      goToAllOwners,
+      showCars,
+      showTrucks,
+      showCrossOver,
+      showHybrid,
+      showUpComingVehicles,
+      showSpecialEditions
     );
   };
 

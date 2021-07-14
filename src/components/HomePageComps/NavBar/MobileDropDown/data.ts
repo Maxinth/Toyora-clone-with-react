@@ -70,6 +70,9 @@ export const getCallback = (
     case "upcoming vehicles":
       callbackFunction = () => showUpComingVehicles();
       break;
+    case "special editions":
+      callbackFunction = () => showSpecialEditions();
+      break;
     default:
       callbackFunction = () => "default message";
       break;
