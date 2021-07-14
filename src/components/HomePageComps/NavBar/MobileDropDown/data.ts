@@ -86,7 +86,8 @@ export const goBackCB = (
   vehiclesCallback: Function,
   shoppingCB: Function,
   backFromHelpFulLinks: Function,
-  backFromAllOwners: Function
+  backFromAllOwners: Function,
+  backToVehiclesView: Function
 ): Function => {
   // callback based on string
   let callbackFunction: Function;
@@ -104,7 +105,8 @@ export const goBackCB = (
       callbackFunction = () => backFromAllOwners();
       break;
     default:
-      callbackFunction = () => "default message";
+      // callbackFunction = () => "default message";
+      callbackFunction = () => backToVehiclesView();
       break;
   }
   return callbackFunction();

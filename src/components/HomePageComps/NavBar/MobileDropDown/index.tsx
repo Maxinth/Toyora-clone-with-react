@@ -5,6 +5,7 @@ import { RootState } from "../../../../appStore/store";
 import { data, mainDropFurtherDetails } from "./data";
 import GoTos from "./GoTos";
 import FurtherDetails from "./FurtherDetails";
+import VehiclesOptions from "./Vehicles/VehiclesOptions";
 
 const MobileDropDown = () => {
   const isInView = useSelector((state: RootState) => state.hamburger.isOpen);
@@ -13,6 +14,7 @@ const MobileDropDown = () => {
       <MobileNavListItems items={data} />
       <FurtherDetails details={mainDropFurtherDetails} />
       <GoTos />
+      <VehiclesOptions />
     </Container>
   );
 };
