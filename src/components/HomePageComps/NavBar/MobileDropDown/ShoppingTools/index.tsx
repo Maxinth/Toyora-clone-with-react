@@ -1,21 +1,22 @@
-import { ShoppingToolsContainer } from "./styled";
+// import { ShoppingToolsContainer } from "./styled";
 import NewViewHeader from "../NewViewHeader";
 import { useSelector } from "react-redux";
 import { RootState } from "../../../../../appStore/store";
 import ShoppingToolsList from "./ShoppingToolsList";
 import FurtherDetails from "../FurtherDetails";
 import { moreDetails } from "./data";
+import OptionsLayout from "../OptionsLayout";
 
 const ShoppingTools = () => {
   const isInView = useSelector(
     (state: RootState) => state.shoppingTools.showShoppingTools
   );
   return (
-    <ShoppingToolsContainer isInView={isInView}>
+    <OptionsLayout isInView={isInView}>
       <NewViewHeader title="Shopping Tools" />
       <ShoppingToolsList />
       <FurtherDetails details={moreDetails} />
-    </ShoppingToolsContainer>
+    </OptionsLayout>
   );
 };
 

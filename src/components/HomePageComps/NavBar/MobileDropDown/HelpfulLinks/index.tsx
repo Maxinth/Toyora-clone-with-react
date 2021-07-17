@@ -1,4 +1,5 @@
-import { HelpLinksContainer } from "./styled";
+// import { HelpLinksContainer } from "./styled";
+import OptionsLayout from "../OptionsLayout";
 import HelpLists from "./HelpLists";
 import NewViewHeader from "../NewViewHeader";
 import { RootState } from "../../../../../appStore/store";
@@ -10,10 +11,10 @@ const HelpfulLinks = () => {
     (state: RootState) => state.helpFulLinks.showHelpFulLinks
   );
   return (
-    <HelpLinksContainer isInView={isInView}>
+    <OptionsLayout isInView={isInView}>
       <NewViewHeader title="Helpful Links" />
       <HelpLists data={data} />
-    </HelpLinksContainer>
+    </OptionsLayout>
   );
 };
 
