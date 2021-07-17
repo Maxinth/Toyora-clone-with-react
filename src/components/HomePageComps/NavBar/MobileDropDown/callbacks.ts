@@ -1,4 +1,4 @@
-// callback to return to previous item
+// callbacks imports to return to previous item
 import {
   backFromAllVehicles,
   backToAllVehiclesViewFromAnySubView,
@@ -8,7 +8,7 @@ import { backFromHelpFulLinks } from "../../../../features/MobileDropDown/helpFu
 import { backFromAllOwners } from "../../../../features/MobileDropDown/ownersSlice";
 import { goBackCB, getCallback as ForwardCB } from "./data";
 
-// callbacks to move to next items
+// callbacks imports to move to next items
 import {
   goToAllVehicles,
   showCars,
