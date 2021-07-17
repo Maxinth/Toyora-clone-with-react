@@ -1,4 +1,3 @@
-// import { HelpLinksContainer } from "./styled";
 import OptionsLayout from "../OptionsLayout";
 import HelpLists from "./HelpLists";
 import NewViewHeader from "../NewViewHeader";

@@ -1,4 +1,3 @@
-// import { AvContainer } from "./styled";
 import NewViewHeader from "../NewViewHeader";
 import MobileNavListItems from "../MobileNavListItems";
 import { vehiclesList } from "./data";
@@ -19,10 +18,3 @@ const AllVehicles = () => {
 };
 
 export default AllVehicles;
-
-/*
-
-
-
-
-*/
