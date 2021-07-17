@@ -38,11 +38,14 @@ const Image = styled.img`
     width: 100%;
     font-size: 0.9rem;
     /* font-weight: 300; */
-    & + ${Name} {
-      font-weight: 700;
-      font-size: 1.1rem;
-    }
   }
 `;
 
-export { Image, Name, ItemContainer, ListItem, Price, Super };
+const BtContainer = styled.div`
+  & > ${Name} {
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
+`;
+
+export { BtContainer, Image, Name, ItemContainer, ListItem, Price, Super };
