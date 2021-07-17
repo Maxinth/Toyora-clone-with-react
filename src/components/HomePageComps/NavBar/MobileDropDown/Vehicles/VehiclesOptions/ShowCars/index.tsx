@@ -1,8 +1,8 @@
-import NewViewHeader from "../../NewViewHeader";
-import { Container } from "./styled";
-import { RootState } from "../../../../../../appStore/store";
+import NewViewHeader from "../../../NewViewHeader";
+import { Container } from "../styled";
+import { RootState } from "../../../../../../../appStore/store";
 import { useSelector } from "react-redux";
-import OptionsList from "./OptionsList";
+import OptionsList from "../OptionsList";
 
 const ShowCars = () => {
   const isInView = useSelector(

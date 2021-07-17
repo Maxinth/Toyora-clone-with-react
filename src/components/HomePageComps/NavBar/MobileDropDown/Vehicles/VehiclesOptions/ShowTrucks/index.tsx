@@ -1,6 +1,6 @@
-import NewViewHeader from "../../NewViewHeader";
-import { Container } from "./styled";
-import { RootState } from "../../../../../../appStore/store";
+import NewViewHeader from "../../../NewViewHeader";
+import { Container } from "../styled";
+import { RootState } from "../../../../../../../appStore/store";
 import { useSelector } from "react-redux";
 
 const ShowTrucks = () => {
