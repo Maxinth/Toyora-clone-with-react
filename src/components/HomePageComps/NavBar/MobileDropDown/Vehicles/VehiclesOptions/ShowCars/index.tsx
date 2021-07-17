@@ -3,6 +3,7 @@ import { Container } from "../styled";
 import { RootState } from "../../../../../../../appStore/store";
 import { useSelector } from "react-redux";
 import OptionsList from "../OptionsList";
+import { data } from "./data";
 
 const ShowCars = () => {
   const isInView = useSelector(
@@ -11,7 +12,7 @@ const ShowCars = () => {
   return (
     <Container isInView={isInView}>
       <NewViewHeader title="cars & minivan" />
-      <OptionsList />
+      <OptionsList data={data} />
     </Container>
   );
 };

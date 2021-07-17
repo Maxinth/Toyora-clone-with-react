@@ -13,6 +13,8 @@ export interface VOption {
   MPG: number;
   MPGe: number;
 }
+
+// export interface Data { ...VOption[]}
 export const data: VOption[] = [
   {
     initName: "Plug-in Hybrid",
