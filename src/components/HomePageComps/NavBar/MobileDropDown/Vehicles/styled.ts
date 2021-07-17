@@ -6,7 +6,8 @@ interface AvProps {
 const AvContainer = styled.section<AvProps>`
   position: absolute;
   transform: translateX(100%);
-  transition: transform 0.5s;
+  transition: transform 0.5s, opacity 0.8s;
+  opacity: 0;
   background-color: white;
   top: 0;
   left: 0;
@@ -18,6 +19,7 @@ const AvContainer = styled.section<AvProps>`
     isInView &&
     css`
       transform: translateX(0%);
+      opacity: 1;
     `}
 
   ${ListItem} {
