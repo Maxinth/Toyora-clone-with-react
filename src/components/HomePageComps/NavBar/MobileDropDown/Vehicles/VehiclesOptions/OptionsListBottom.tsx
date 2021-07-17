@@ -7,7 +7,6 @@ const OptionsListBottom = () => {
       <Price>
         $28,220 starting <Super>1</Super>
       </Price>
-
       <Price>
         54/133 est. MPG<Super>61</Super>/MPGe<Super>61</Super>
       </Price>
