@@ -1,13 +1,19 @@
 import { Name, Image, Super, Price } from "./styled";
-import PriusPrime from "../../../../../../assets/priusprime-side.png";
+// import PriusPrime from "../../../../../../assets/priusprime-side.png";
+import { FC } from "react";
 
-const OptionsListTop = () => {
+interface Props {
+  initName: string;
+  imageSrc: string;
+  price: string;
+}
+const OptionsListTop: FC<Props> = ({ initName, imageSrc, price }) => {
   return (
     <>
-      <Name>Plug-in Hybrid</Name>
-      <Image src={PriusPrime} alt="priusPrime" />
+      <Name>{initName}</Name>
+      <Image src={imageSrc} alt={initName} />
       <Price>
-        $34,425 as shown<Super>1</Super>
+        ${price} as shown<Super>1</Super>
       </Price>
     </>
   );

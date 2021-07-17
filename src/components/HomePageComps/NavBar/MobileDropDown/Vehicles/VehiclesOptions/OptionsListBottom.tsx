@@ -1,14 +1,38 @@
 import { BtContainer, Name, Super, Price } from "./styled";
+import { FC } from "react";
 
-const OptionsListBottom = () => {
+interface Props {
+  mainName: string;
+  firstPriceText: string;
+  est: string;
+  MPG: number;
+  MPGe: number;
+}
+const OptionsListBottom: FC<Props> = ({
+  mainName,
+  firstPriceText,
+  est,
+  MPG,
+  MPGe,
+}) => {
   return (
     <BtContainer>
-      <Name>2021 Prius Prime</Name>
+      <Name>{mainName}</Name>
       <Price>
-        $28,220 starting <Super>1</Super>
+        ${firstPriceText} starting <Super>1</Super>
       </Price>
       <Price>
-        54/133 est. MPG<Super>61</Super>/MPGe<Super>61</Super>
+        {est}est.
+        {MPG !== 0 && (
+          <span>
+            MPG <Super> {MPG}</Super>
+          </span>
+        )}
+        {MPGe !== 0 && (
+          <span>
+            MPGe<Super>{MPGe}</Super>
+          </span>
+        )}
       </Price>
     </BtContainer>
   );
