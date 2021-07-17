@@ -9,6 +9,8 @@ const Container = styled.section<ContainerProps>`
   transition: transform 0.5s;
   transform: translateY(-140%);
   height: 100vh;
+  /* height: 100%; */
+
   margin-top: 5rem;
   position: relative;
   /* position: relative;
@@ -21,6 +23,7 @@ const Container = styled.section<ContainerProps>`
     isShown &&
     css`
       transform: translateY(5%);
+      /* overflow: auto; */
     `}
   @media (min-width: 768px) {
     display: none;

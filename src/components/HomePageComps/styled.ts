@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-const HomeContainer = styled.main``;
+const HomeContainer = styled.main`
+  width: 100%;
+  height: 100vh;
+  /* overflow: scroll; */
+`;
 const MockBox = styled.div`
   display: flex;
   justify-content: space-evenly;
