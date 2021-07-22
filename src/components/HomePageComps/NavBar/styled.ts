@@ -9,8 +9,8 @@ const Nav = styled.nav`
   right: 0;
   top: 0;
   background-color: white;
-  box-shadow: 1px 2px 2px ghostwhite;
-  border: 1px solid red;
+  box-shadow: 1px 2px 2px grey;
+  /* border: 1px solid red; */
 `;
 const LgNavBox = styled.section`
   display: none;

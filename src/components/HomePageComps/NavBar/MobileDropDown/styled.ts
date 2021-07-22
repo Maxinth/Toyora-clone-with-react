@@ -13,6 +13,11 @@ const Container = styled.section<ContainerProps>`
 
   margin-top: 5rem;
   position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 700;
   /* position: relative;
   top: 0;
   left: 0;
@@ -59,9 +64,14 @@ const NewViewContainer = styled.div`
   text-transform: uppercase;
 
   padding: 0.5rem 2rem;
-  position: relative;
-  top: -1rem;
-
+  /* position: relative;
+  top: -1rem; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 600;
+  border: 1px solid red;
   color: #333;
   font-family: "Roboto", sans-serif;
   font-weight: bolder;
