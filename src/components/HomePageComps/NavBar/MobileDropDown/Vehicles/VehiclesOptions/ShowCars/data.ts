@@ -1,4 +1,4 @@
-// import img from "../../../../../../../../public/items/priusprime-side.png";
+// customized function to spit out path to images
 
 export const Img = (fileName: string): string => {
   return `../../../../../../../../items/${fileName}.png`;

@@ -10,7 +10,7 @@ const AllVehicles = () => {
     (state: RootState) => state.vehicles.showAllVehicles
   );
   return (
-    <OptionsLayout isInView={isInView}>
+    <OptionsLayout isInView={isInView} fullScreen={false}>
       <NewViewHeader title="Vehicles" />
       <MobileNavListItems items={vehiclesList} />
     </OptionsLayout>
