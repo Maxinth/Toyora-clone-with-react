@@ -13,3 +13,7 @@ function App() {
 }
 
 export default App;
+
+/*
+fix overflow issue on mobile dropdown and move assets to public/items for easy iteration
+*/

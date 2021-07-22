@@ -1,8 +1,7 @@
-import img from "../../../../../../../../public/items/priusprime-side.png";
+// import img from "../../../../../../../../public/items/priusprime-side.png";
+
 export const Img = (fileName: string): string => {
-  //   return `../../../../../../../assets/${fileName}.png`;
-  //   return `../../../../../../../assets/priusprime-side.png`;
-  return `../../../../../../../../items/priusprime-side.png`;
+  return `../../../../../../../../items/${fileName}.png`;
 };
 
 export interface VOption {
