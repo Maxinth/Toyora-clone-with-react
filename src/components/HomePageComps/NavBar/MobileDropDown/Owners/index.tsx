@@ -8,7 +8,7 @@ import { data } from "./data";
 const Owners = () => {
   const isInView = useSelector((state: RootState) => state.owners.showOwners);
   return (
-    <OptionsLayout isInView={isInView}>
+    <OptionsLayout isInView={isInView} fullScreen={isInView}>
       <NewViewHeader title="Owners" />
       <OwnersList data={data} />
     </OptionsLayout>

@@ -10,7 +10,7 @@ const HelpfulLinks = () => {
     (state: RootState) => state.helpFulLinks.showHelpFulLinks
   );
   return (
-    <OptionsLayout isInView={isInView}>
+    <OptionsLayout isInView={isInView} fullScreen={isInView}>
       <NewViewHeader title="Helpful Links" />
       <HelpLists data={data} />
     </OptionsLayout>

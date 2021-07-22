@@ -14,7 +14,7 @@ const AvContainer = styled.section<AvProps>`
   left: 0;
   right: 0;
   margin-top: -0.1rem;
-  height: 100%;
+  height: 100vh;
   z-index: 300;
   ${({ isInView }) =>
     isInView &&
@@ -26,7 +26,7 @@ const AvContainer = styled.section<AvProps>`
   ${({ fullScreen }) =>
     fullScreen &&
     css`
-      height: 100vh;
+      height: 100%;
     `}
 
   ${ListItem} {

@@ -8,7 +8,7 @@ const ShowTrucks = () => {
     (state: RootState) => state.vehicles.vehiclesInView.trucks
   );
   return (
-    <Container isInView={isInView}>
+    <Container isInView={isInView} fullScreen={isInView}>
       <NewViewHeader title="trucks" />
       <div>
         <h1>Trucks view</h1>

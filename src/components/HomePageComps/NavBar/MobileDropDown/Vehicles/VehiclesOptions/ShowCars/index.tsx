@@ -10,7 +10,7 @@ const ShowCars = () => {
     (state: RootState) => state.vehicles.vehiclesInView.cars
   );
   return (
-    <Container isInView={isInView}>
+    <Container isInView={isInView} fullScreen={isInView}>
       <NewViewHeader title="cars & minivan" />
       <OptionsList data={data} />
     </Container>

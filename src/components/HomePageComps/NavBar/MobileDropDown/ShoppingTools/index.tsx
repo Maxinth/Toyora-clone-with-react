@@ -11,7 +11,7 @@ const ShoppingTools = () => {
     (state: RootState) => state.shoppingTools.showShoppingTools
   );
   return (
-    <OptionsLayout isInView={isInView}>
+    <OptionsLayout isInView={isInView} fullScreen={isInView}>
       <NewViewHeader title="Shopping Tools" />
       <ShoppingToolsList />
       <FurtherDetails details={moreDetails} />
