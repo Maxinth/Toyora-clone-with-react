@@ -2,18 +2,19 @@ import styled, { css } from "styled-components";
 
 interface ContainerProps {
   isShown: boolean;
+  showV: boolean;
 }
 
 const Container = styled.section<ContainerProps>`
   padding: 0.2rem 1rem;
-  transition: transform 0.5s;
+  transition: transform 0.5s, margin-top 2s;
   transform: translateY(-140%);
   height: 100vh;
   width: 100%;
   overflow: hidden; /* so other contents are hidden */
   margin-top: 5rem;
-  position: relative;
-  /* position: absolute; */
+  /* position: relative; */
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -31,6 +32,18 @@ const Container = styled.section<ContainerProps>`
       z-index: 700;
       background-color: white;
     `}
+  ${({ showV }) =>
+    showV &&
+    css`
+      margin-top: -1rem;
+    `}
+  /* ${({ showV, isShown }) =>
+    showV &&
+    isShown &&
+    css`
+      z-index: 400;
+      overflow: hidden;
+    `} */
   @media (min-width: 768px) {
     display: none;
   }

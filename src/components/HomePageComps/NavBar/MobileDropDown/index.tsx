@@ -9,8 +9,11 @@ import VehiclesOptions from "./Vehicles/VehiclesOptions";
 
 const MobileDropDown = () => {
   const isInView = useSelector((state: RootState) => state.hamburger.isOpen);
+  const showV = useSelector(
+    (state: RootState) => state.vehicles.showAllVehicles
+  );
   return (
-    <Container isShown={isInView}>
+    <Container isShown={isInView} showV={showV}>
       <MobileNavListItems items={data} />
       <FurtherDetails details={mainDropFurtherDetails} />
       <GoTos />
