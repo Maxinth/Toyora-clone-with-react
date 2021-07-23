@@ -17,7 +17,7 @@ const AvContainer = styled.section<AvProps>`
   height: 100vh;
   overflow: hidden;
   padding-top: 1rem;
-  z-index: 300;
+  /* z-index: 300; */
   ${({ isInView }) =>
     isInView &&
     css`
@@ -30,6 +30,8 @@ const AvContainer = styled.section<AvProps>`
     css`
       height: 100%;
       overflow: scroll;
+      width: 100vw;
+      z-index: 800;
       /* margin-top: 1rem; */
     `}
 

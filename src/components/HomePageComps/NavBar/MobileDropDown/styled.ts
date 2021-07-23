@@ -13,22 +13,23 @@ const Container = styled.section<ContainerProps>`
   overflow: hidden; /* so other contents are hidden */
   margin-top: 5rem;
   position: relative;
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   left: 0;
   right: 0;
-  z-index: 700;
+  z-index: 400;
   /* position: relative;
   top: 0;
   left: 0;
   right: 0;
   z-index: 600; */
-  /* background-color: white; */
+
   ${({ isShown }) =>
     isShown &&
     css`
       transform: translateY(5%);
-      /* overflow: auto; */
+      z-index: 700;
+      background-color: white;
     `}
   @media (min-width: 768px) {
     display: none;
