@@ -12,6 +12,16 @@ const MobileDropDown = () => {
   const showV = useSelector(
     (state: RootState) => state.vehicles.showAllVehicles
   );
+  // const showShop = useSelector(
+  //   (state: RootState) => state.shoppingTools
+  // );
+  // const showHelp = useSelector(
+  //   (state: RootState) => state.helpFulLinks
+  // );
+  // const showOwner= useSelector(
+  //   (state: RootState) => state.owners
+  // );
+
   return (
     <Container isShown={isInView} showV={showV}>
       <MobileNavListItems items={data} />

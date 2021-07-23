@@ -29,13 +29,14 @@ const Container = styled.section<ContainerProps>`
     isShown &&
     css`
       transform: translateY(5%);
-      z-index: 700;
+      /* z-index: 700; */
       background-color: white;
     `}
   ${({ showV }) =>
     showV &&
     css`
       margin-top: -1rem;
+      z-index: 700;
     `}
   /* ${({ showV, isShown }) =>
     showV &&
