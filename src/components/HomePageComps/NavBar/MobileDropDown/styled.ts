@@ -9,8 +9,8 @@ const Container = styled.section<ContainerProps>`
   transition: transform 0.5s;
   transform: translateY(-140%);
   height: 100vh;
-  /* height: 100%; */
-
+  width: 100%;
+  overflow: hidden; /* so other contents are hidden */
   margin-top: 5rem;
   position: relative;
   position: absolute;
@@ -64,14 +64,14 @@ const NewViewContainer = styled.div`
   text-transform: uppercase;
 
   padding: 0.5rem 2rem;
-  /* position: relative;
-  top: -1rem; */
-  position: fixed;
+  position: relative;
+  top: -1rem;
+  /* position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 600;
-  border: 1px solid red;
+  z-index: 600; */
+  /* border: 1px solid red; */
   color: #333;
   font-family: "Roboto", sans-serif;
   font-weight: bolder;
