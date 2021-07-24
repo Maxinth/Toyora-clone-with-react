@@ -6,7 +6,7 @@ import {
 import { backFromAllShoppingTools } from "../../../../features/MobileDropDown/shoppingToolsSlice";
 import { backFromHelpFulLinks } from "../../../../features/MobileDropDown/helpFulLinksSlice";
 import { backFromAllOwners } from "../../../../features/MobileDropDown/ownersSlice";
-import { makeFullScreen } from "../../../../features/MobileDropDown/fullScreenslice";
+// import { makeFullScreen } from "../../../../features/MobileDropDown/fullScreenslice";
 import { goBackCB, getCallback as ForwardCB } from "./data";
 
 // callbacks imports to move to next items
@@ -46,7 +46,7 @@ export const goForwardCB = (itemName: string) => {
     showCrossOver,
     showHybrid,
     showUpComingVehicles,
-    showSpecialEditions,
-    makeFullScreen
+    showSpecialEditions
+    // makeFullScreen
   );
 };

@@ -38,19 +38,13 @@ export const getCallback = (
   showCrossOver: Function,
   showHybrid: Function,
   showUpComingVehicles: Function,
-  showSpecialEditions: Function,
-  makeFullScreen: Function
+  showSpecialEditions: Function
 ): void => {
   let callbackFunction: Function;
 
-  const mainCallback = () => {
-    callbackFunction();
-    // makeFullScreen();
-  };
   switch (itemName) {
     case "Vehicles":
       callbackFunction = () => vehiclesCallback();
-
       break;
     case "Shopping Tools":
       callbackFunction = () => showAllShoppingTools();
@@ -83,8 +77,8 @@ export const getCallback = (
       callbackFunction = () => "default message";
       break;
   }
-  makeFullScreen();
-  return mainCallback();
+
+  return callbackFunction();
 };
 
 // getting callback for backward click
