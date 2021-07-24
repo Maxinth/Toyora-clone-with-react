@@ -13,7 +13,7 @@ export const store = configureStore({
     shoppingTools: shoppingToolsReducer,
     helpFulLinks: helpfulLinksReducer,
     owners: ownersReducer,
-    isFullScreen: screenReducer,
+    screen: screenReducer,
   },
 });
 
