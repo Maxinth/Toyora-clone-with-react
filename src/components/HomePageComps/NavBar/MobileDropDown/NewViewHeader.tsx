@@ -14,7 +14,9 @@ const NewViewHeader: FC<Props> = ({ title }) => {
     <NewViewContainer>
       <ArrowBackIosIcon onClick={() => dispatch(goBackOneStepCB(title))} />
       {title}
+      {/* hidden */}
       <DropMenuToggle />
+      {/* hidden */}
     </NewViewContainer>
   );
 };

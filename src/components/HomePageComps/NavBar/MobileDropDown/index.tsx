@@ -10,8 +10,8 @@ import VehiclesOptions from "./Vehicles/VehiclesOptions";
 
 const MobileDropDown = () => {
   const isInView = useSelector((state: RootState) => state.hamburger.isOpen);
-
   const { isFullScreen } = useFullScreen();
+
   return (
     <Container isShown={isInView} showV={isFullScreen}>
       <MobileNavListItems items={data} />

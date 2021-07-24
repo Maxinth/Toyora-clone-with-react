@@ -7,7 +7,7 @@ interface ContainerProps {
 
 const Container = styled.section<ContainerProps>`
   padding: 0.2rem 1rem;
-  transition: transform 0.5s, margin-top 0.1s;
+  transition: transform 0.1s, margin-top 0s, opacity 0.2s;
   transform: translateY(-140%);
   height: 100vh;
   width: 100%;

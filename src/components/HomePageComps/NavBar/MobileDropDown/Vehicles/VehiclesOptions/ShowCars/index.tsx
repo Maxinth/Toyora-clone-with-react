@@ -13,6 +13,7 @@ const ShowCars = () => {
     <Container isInView={isInView} fullScreen={isInView}>
       <NewViewHeader title="cars & minivan" />
       <OptionsList data={data} />
+      <NewViewHeader title="Back to All Vehicles" />
     </Container>
   );
 };
