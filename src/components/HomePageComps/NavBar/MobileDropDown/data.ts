@@ -1,3 +1,6 @@
+import { RootState } from "../../../../appStore/store";
+
+// export type Item = (n: RootState)=> boolean
 export interface DropOptions {
   itemName: string;
   withForwardArrow: boolean;
@@ -114,3 +117,16 @@ export const goBackCB = (
 };
 
 export const mainDropFurtherDetails: string[] = ["FAQ", "Espanol", "Careers"];
+
+export const doFullScreen = (
+  vehicles: boolean,
+  shopping: boolean,
+  helpfulLinks: boolean,
+  owners: boolean
+): boolean => {
+  let isFullScreen: boolean = false;
+  if (vehicles || shopping || helpfulLinks || owners) {
+    isFullScreen = true;
+  }
+  return isFullScreen;
+};

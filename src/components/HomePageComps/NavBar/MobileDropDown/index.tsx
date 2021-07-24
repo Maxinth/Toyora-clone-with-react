@@ -2,7 +2,7 @@ import { Container } from "./styled";
 import MobileNavListItems from "./MobileNavListItems";
 import { useSelector } from "react-redux";
 import { RootState } from "../../../../appStore/store";
-import { data, mainDropFurtherDetails } from "./data";
+import { data, mainDropFurtherDetails, doFullScreen } from "./data";
 import GoTos from "./GoTos";
 import FurtherDetails from "./FurtherDetails";
 import VehiclesOptions from "./Vehicles/VehiclesOptions";
