@@ -2,6 +2,7 @@
 import {
   backFromAllVehicles,
   backToAllVehiclesViewFromAnySubView,
+  doFullScreen,
 } from "../../../../features/MobileDropDown/vehiclesSlice";
 import { backFromAllShoppingTools } from "../../../../features/MobileDropDown/shoppingToolsSlice";
 import { backFromHelpFulLinks } from "../../../../features/MobileDropDown/helpFulLinksSlice";
@@ -45,6 +46,7 @@ export const goForwardCB = (itemName: string) => {
     showCrossOver,
     showHybrid,
     showUpComingVehicles,
-    showSpecialEditions
+    showSpecialEditions,
+    doFullScreen
   );
 };

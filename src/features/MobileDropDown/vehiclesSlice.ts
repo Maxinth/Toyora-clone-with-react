@@ -10,6 +10,7 @@ export interface vehiclesState {
     upComingVehicles: boolean;
     specialEditions: boolean;
   };
+  isFullScreen: boolean;
 }
 
 const initialState: vehiclesState = {
@@ -22,6 +23,7 @@ const initialState: vehiclesState = {
     upComingVehicles: false,
     specialEditions: false,
   },
+  isFullScreen: false,
 };
 
 export const vehiclesSlice = createSlice({
@@ -41,25 +43,31 @@ export const vehiclesSlice = createSlice({
 
     showCars: (state) => {
       state.vehiclesInView.cars = true;
+      state.isFullScreen = true;
     },
 
     showTrucks: (state) => {
       state.vehiclesInView.trucks = true;
+      state.isFullScreen = true;
     },
 
     showCrossOver: (state) => {
       state.vehiclesInView.crossOver = true;
+      state.isFullScreen = true;
     },
     showHybrid: (state) => {
       state.vehiclesInView.hybrid = true;
+      state.isFullScreen = true;
     },
 
     showUpComingVehicles: (state) => {
       state.vehiclesInView.upComingVehicles = true;
+      state.isFullScreen = true;
     },
 
     showSpecialEditions: (state) => {
       state.vehiclesInView.specialEditions = true;
+      state.isFullScreen = true;
     },
 
     backToAllVehiclesViewFromAnySubView: (state) => {
@@ -69,6 +77,10 @@ export const vehiclesSlice = createSlice({
       state.vehiclesInView.hybrid = false;
       state.vehiclesInView.upComingVehicles = false;
       state.vehiclesInView.specialEditions = false;
+      state.isFullScreen = false;
+    },
+    doFullScreen: (state) => {
+      state.isFullScreen = true;
     },
   },
 });
@@ -84,6 +96,7 @@ export const {
   showUpComingVehicles,
   showSpecialEditions,
   backToAllVehiclesViewFromAnySubView,
+  doFullScreen,
 } = vehiclesSlice.actions;
 
 export default vehiclesSlice.reducer;

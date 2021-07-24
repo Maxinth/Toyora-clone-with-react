@@ -9,21 +9,12 @@ import VehiclesOptions from "./Vehicles/VehiclesOptions";
 
 const MobileDropDown = () => {
   const isInView = useSelector((state: RootState) => state.hamburger.isOpen);
-  const showV = useSelector(
-    (state: RootState) => state.vehicles.showAllVehicles
+  const isFullScreen = useSelector(
+    (state: RootState) => state.vehicles.isFullScreen
   );
-  // const showShop = useSelector(
-  //   (state: RootState) => state.shoppingTools
-  // );
-  // const showHelp = useSelector(
-  //   (state: RootState) => state.helpFulLinks
-  // );
-  // const showOwner= useSelector(
-  //   (state: RootState) => state.owners
-  // );
 
   return (
-    <Container isShown={isInView} showV={showV}>
+    <Container isShown={isInView} showV={isFullScreen}>
       <MobileNavListItems items={data} />
       <FurtherDetails details={mainDropFurtherDetails} />
       <GoTos />

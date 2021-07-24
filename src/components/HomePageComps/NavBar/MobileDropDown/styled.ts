@@ -7,7 +7,7 @@ interface ContainerProps {
 
 const Container = styled.section<ContainerProps>`
   padding: 0.2rem 1rem;
-  transition: transform 0.5s, margin-top 2s;
+  transition: transform 0.5s, margin-top 0.1s;
   transform: translateY(-140%);
   height: 100vh;
   width: 100%;
@@ -82,11 +82,13 @@ const NewViewContainer = styled.div`
   position: relative;
   top: -1rem;
   /* position: fixed;
-  top: 0;
+  top: 10px;
   left: 0;
-  right: 0;
-  z-index: 600; */
+  right: 0; */
+
+  z-index: 600;
   /* border: 1px solid red; */
+  /* margin-bottom: 1rem; */
   color: #333;
   font-family: "Roboto", sans-serif;
   font-weight: bolder;
