@@ -11,7 +11,7 @@ const MobileDropDown = () => {
   const isInView = useSelector((state: RootState) => state.hamburger.isOpen);
 
   return (
-    <Container isShown={isInView} showV={isInView}>
+    <Container isShown={isInView} showV={!isInView}>
       <MobileNavListItems items={data} />
       <FurtherDetails details={mainDropFurtherDetails} />
       <GoTos />

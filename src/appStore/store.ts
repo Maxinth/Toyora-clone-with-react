@@ -4,6 +4,7 @@ import vehiclesReducer from "../features/MobileDropDown/vehiclesSlice";
 import shoppingToolsReducer from "../features/MobileDropDown/shoppingToolsSlice";
 import helpfulLinksReducer from "../features/MobileDropDown/helpFulLinksSlice";
 import ownersReducer from "../features/MobileDropDown/ownersSlice";
+import screenReducer from "../features/MobileDropDown/fullScreenslice";
 
 export const store = configureStore({
   reducer: {
@@ -12,6 +13,7 @@ export const store = configureStore({
     shoppingTools: shoppingToolsReducer,
     helpFulLinks: helpfulLinksReducer,
     owners: ownersReducer,
+    isFullScreen: screenReducer,
   },
 });
 
