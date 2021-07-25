@@ -1,6 +1,7 @@
 import { RootState } from "../../../../../../appStore/store";
 import { useSelector } from "react-redux";
 
+// string literal
 type ID =
   | "cars"
   | "trucks"
@@ -9,11 +10,15 @@ type ID =
   | "upComingVehicles"
   | "specialEditions";
 
+// id can have only one of the values specified in ID
 const useVehicleState = (id: ID) => {
+  //vObject returns the whole object
   const vObject = useSelector(
     (state: RootState) => state.vehicles.vehiclesInView
   );
-  const isInView = vObject[`${id}`];
+
+  // the state of the id passed in can be obtained
+  const isInView: boolean = vObject[id];
 
   return { isInView };
 };

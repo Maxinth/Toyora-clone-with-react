@@ -1,12 +1,8 @@
-import { RootState } from "../../../../../../../appStore/store";
-import { useSelector } from "react-redux";
 import { data } from "./data";
 import VehicleOptionsLayout from "../VehicleOptionsLayout";
-
+import useVehicleState from "../useVehicleState";
 const ShowCars = () => {
-  const isInView = useSelector(
-    (state: RootState) => state.vehicles.vehiclesInView.cars
-  );
+  const { isInView } = useVehicleState("cars");
   return (
     <VehicleOptionsLayout
       topTitle="cars & minivan"
