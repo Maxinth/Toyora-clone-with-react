@@ -13,12 +13,12 @@ type ID =
 // id can have only one of the values specified in ID
 const useVehicleState = (id: ID) => {
   //vObject returns the whole object
-  const vObject = useSelector(
+  const vehiclesObject = useSelector(
     (state: RootState) => state.vehicles.vehiclesInView
   );
 
   // the state of the id passed in can be obtained
-  const isInView: boolean = vObject[id];
+  const isInView: boolean = vehiclesObject[id];
 
   return { isInView };
 };
