@@ -1,9 +1,16 @@
 import styled from "styled-components";
+import { NewViewContainer } from "../../styled";
 export { AvContainer as Container } from "../styled";
 
 const ItemContainer = styled.ul`
   font-family: "Lato", sans-serif;
   padding: 0.5rem 2rem;
+  & + ${NewViewContainer} {
+    margin: 2rem 0 1rem;
+    text-align: center;
+    padding: 1rem;
+    justify-content: center;
+  }
 `;
 
 const Name = styled.p``;
