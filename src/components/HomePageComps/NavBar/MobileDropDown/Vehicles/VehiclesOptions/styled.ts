@@ -13,7 +13,9 @@ const ItemContainer = styled.ul`
   }
 `;
 
-const Name = styled.p``;
+const Name = styled.p`
+  text-transform: capitalize;
+`;
 
 const ListItem = styled.li`
   display: flex;
@@ -64,4 +66,15 @@ const BtContainer = styled.div`
   }
 `;
 
-export { BtContainer, Image, Name, ItemContainer, ListItem, Price, Super };
+const Span = styled.span``;
+
+export {
+  BtContainer,
+  Image,
+  Name,
+  ItemContainer,
+  ListItem,
+  Price,
+  Super,
+  Span,
+};

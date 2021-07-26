@@ -1,4 +1,4 @@
-import { BtContainer, Name, Super, Price } from "./styled";
+import { BtContainer, Name, Super, Price, Span } from "./styled";
 import { FC } from "react";
 
 interface Props {
@@ -24,14 +24,14 @@ const OptionsListBottom: FC<Props> = ({
       <Price>
         {est}est.
         {MPG !== 0 && (
-          <span>
+          <Span>
             MPG <Super> {MPG}</Super>
-          </span>
+          </Span>
         )}
         {MPGe !== 0 && (
-          <span>
+          <Span>
             MPGe<Super>{MPGe}</Super>
-          </span>
+          </Span>
         )}
       </Price>
     </BtContainer>
