@@ -6,12 +6,13 @@ import { useDispatch } from "react-redux";
 import { goBackOneStepCB } from "./callbacks";
 interface Props {
   title: string;
+  isShown?: boolean;
 }
-const NewViewHeader: FC<Props> = ({ title }) => {
+const NewViewHeader: FC<Props> = ({ title, isShown = true }) => {
   const dispatch = useDispatch();
 
   return (
-    <NewViewContainer>
+    <NewViewContainer isShown={isShown}>
       <ArrowBackIosIcon onClick={() => dispatch(goBackOneStepCB(title))} />
       {title}
       {/* hidden */}

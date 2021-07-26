@@ -9,6 +9,7 @@ const ShowSpecialEditions = () => {
       isInView={isInView}
       data={data}
       topTitle="special editions"
+      isBottomHeaderShown={false}
     />
   );
 };

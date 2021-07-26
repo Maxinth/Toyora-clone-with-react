@@ -5,6 +5,10 @@ interface ContainerProps {
   showV: boolean;
 }
 
+interface NvHeaderProps {
+  isShown: boolean;
+}
+
 const Container = styled.section<ContainerProps>`
   padding: 0.2rem 1rem;
   transition: transform 0.3s, margin-top 0s;
@@ -72,7 +76,7 @@ const ListItem = styled.li`
   }
 `;
 
-const NewViewContainer = styled.div`
+const NewViewContainer = styled.div<NvHeaderProps>`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -104,5 +108,11 @@ const NewViewContainer = styled.div`
     display: none;
     visibility: none;
   }
+
+  ${({ isShown }) =>
+    !isShown &&
+    css`
+      display: none;
+    `}
 `;
 export { Container, ListContainer, ListItem, NewViewContainer };
