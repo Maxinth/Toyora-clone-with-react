@@ -1,6 +1,7 @@
 import ShowCars from "./ShowCars";
 import ShowTrucks from "./ShowTrucks";
 import ShowCrossOver from "./ShowCrossOver";
+import ShowHybrid from "./ShowHybrid";
 
 const VehicleOptions = () => {
   return (
@@ -8,6 +9,7 @@ const VehicleOptions = () => {
       <ShowCars />
       <ShowTrucks />
       <ShowCrossOver />
+      <ShowHybrid />
     </>
   );
 };
