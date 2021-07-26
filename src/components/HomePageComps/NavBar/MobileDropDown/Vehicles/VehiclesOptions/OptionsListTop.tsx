@@ -11,9 +11,11 @@ const OptionsListTop: FC<Props> = ({ initName, imageSrc, price }) => {
     <>
       {initName && <Name>{initName}</Name>}
       <Image src={imageSrc} alt={initName} />
-      <Price>
-        ${price} as shown<Super>1</Super>
-      </Price>
+      {price && (
+        <Price>
+          ${price} as shown<Super>1</Super>
+        </Price>
+      )}
     </>
   );
 };
