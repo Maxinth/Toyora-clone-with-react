@@ -10,7 +10,7 @@ const OptionsListTop: FC<Props> = ({ initName, imageSrc, price }) => {
   return (
     <>
       {initName && <Name>{initName}</Name>}
-      <Image src={imageSrc} alt={initName} />
+      {imageSrc && <Image src={imageSrc} alt={initName} />}
       {price && (
         <Price>
           ${price} as shown<Super>1</Super>
