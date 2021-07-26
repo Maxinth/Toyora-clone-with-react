@@ -18,7 +18,11 @@ const VehicleOptionsLayout: FC<Props> = ({
   isBottomHeaderShown = true,
 }) => {
   return (
-    <Container isInView={isInView} fullScreen={isInView}>
+    <Container
+      isInView={isInView}
+      fullScreen={isInView}
+      namesOnly={isBottomHeaderShown}
+    >
       <NewViewHeader title={topTitle} />
       <OptionsList data={data} />
       <NewViewHeader

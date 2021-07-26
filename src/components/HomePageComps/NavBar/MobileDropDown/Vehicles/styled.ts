@@ -1,8 +1,10 @@
 import styled, { css } from "styled-components";
 import { ListItem } from "../styled";
+import { BtContainer } from "./VehiclesOptions/styled";
 interface AvProps {
   isInView: boolean;
   fullScreen: boolean;
+  namesOnly?: boolean;
 }
 const AvContainer = styled.section<AvProps>`
   position: absolute;
@@ -33,6 +35,14 @@ const AvContainer = styled.section<AvProps>`
       width: 100vw;
       z-index: 800;
       /* margin-top: 1rem; */
+    `}
+
+    ${({ namesOnly }) =>
+    namesOnly &&
+    css`
+      ${BtContainer} {
+        bottom: unset;
+      }
     `}
 
   ${ListItem} {

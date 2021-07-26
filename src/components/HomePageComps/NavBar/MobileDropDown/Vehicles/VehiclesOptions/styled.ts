@@ -62,7 +62,7 @@ const BtContainer = styled.div`
   bottom: 20px;
   & > ${Name} {
     font-weight: 700;
-    font-size: 1.1rem;
+    font-size: 1.1r em;
   }
 `;
 
