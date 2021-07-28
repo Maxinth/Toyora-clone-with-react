@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
-const BackDrop = styled.section`
+const BackDrop = styled(motion.div)`
   position: absolute;
   left: 0;
   right: 0;

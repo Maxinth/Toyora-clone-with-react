@@ -5,13 +5,17 @@ import { useDispatch } from "react-redux";
 import { toggleModal } from "../../../features/LocationModal/locationModalSlice";
 
 const LgTopItems = () => {
+  const dispatch = useDispatch();
   return (
     <LgNavInner>
       {data.map((item) => {
         const { itemName, withIcon, iconName } = item;
 
         return (
-          <ListItem key={itemName}>
+          <ListItem
+            key={itemName}
+            onClick={() => dispatch(clickCB(itemName, toggleModal))}
+          >
             <Link to="/">{itemName}</Link>
             {withIcon && iconName}
           </ListItem>

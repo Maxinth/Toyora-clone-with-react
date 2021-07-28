@@ -4,7 +4,7 @@ import DropMenuToggle from "./DropMenuToggle";
 import { useDispatch } from "react-redux";
 import { toggleModal } from "../../../../features/LocationModal/locationModalSlice";
 
-const RightOptions = () => {
+const RightOptionsOnMobile = () => {
   const dispatch = useDispatch();
   return (
     <RightContainer>
@@ -14,4 +14,4 @@ const RightOptions = () => {
   );
 };
 
-export default RightOptions;
+export default RightOptionsOnMobile;

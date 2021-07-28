@@ -45,7 +45,9 @@ use the Icon components in the array.
 
 export const clickCB = (itemName: string, LocationCB: Function): void => {
   if (itemName === "Set Location") {
-    LocationCB();
+    //  the handler doesn't seem to work without the return statement I have added -
+    // do well to add it to handler for the search icon
+    return LocationCB();
   }
   return;
 };
