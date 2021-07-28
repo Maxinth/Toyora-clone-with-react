@@ -44,6 +44,12 @@ const ItemContainer = styled.ul<ItemBox>`
     text-align: center;
     padding: 1rem;
     justify-content: center;
+    text-transform: capitalize;
+    font-weight: bold;
+    & svg {
+      color: red;
+      font-size: 1.2rem;
+    }
   }
 
   ${({ namesOnly }) =>

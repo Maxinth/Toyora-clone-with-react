@@ -17,7 +17,7 @@ const NewViewHeader: FC<Props> = ({
   const dispatch = useDispatch();
 
   return (
-    <NewViewContainer isShown={isShown} doTwoItems={noToggle}>
+    <NewViewContainer isShown={isShown}>
       <ArrowBackIosIcon onClick={() => dispatch(goBackOneStepCB(title))} />
       {title}
 

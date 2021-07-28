@@ -7,7 +7,6 @@ interface ContainerProps {
 
 interface NvHeaderProps {
   isShown: boolean;
-  doTwoItems: boolean;
 }
 
 const Container = styled.section<ContainerProps>`
@@ -110,12 +109,6 @@ const NewViewContainer = styled.div<NvHeaderProps>`
     !isShown &&
     css`
       display: none;
-    `}
-
-  ${({ doTwoItems }) =>
-    doTwoItems &&
-    css`
-      justify-content: center;
     `}
 `;
 export { Container, ListContainer, ListItem, NewViewContainer };
