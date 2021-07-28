@@ -26,6 +26,7 @@ const VehicleOptionsLayout: FC<Props> = ({
       <NewViewHeader
         title="Back to All Vehicles"
         isShown={isBottomHeaderShown}
+        noToggle={true}
       />
     </Container>
   );

@@ -7,17 +7,21 @@ import { goBackOneStepCB } from "./callbacks";
 interface Props {
   title: string;
   isShown?: boolean;
+  noToggle?: boolean;
 }
-const NewViewHeader: FC<Props> = ({ title, isShown = true }) => {
+const NewViewHeader: FC<Props> = ({
+  title,
+  isShown = true,
+  noToggle = false,
+}) => {
   const dispatch = useDispatch();
 
   return (
-    <NewViewContainer isShown={isShown}>
+    <NewViewContainer isShown={isShown} doTwoItems={noToggle}>
       <ArrowBackIosIcon onClick={() => dispatch(goBackOneStepCB(title))} />
       {title}
-      {/* hidden */}
-      <DropMenuToggle />
-      {/* hidden */}
+
+      {!noToggle && <DropMenuToggle showCloseOnly={true} />}
     </NewViewContainer>
   );
 };

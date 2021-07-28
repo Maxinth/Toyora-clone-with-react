@@ -7,10 +7,11 @@ interface ContainerProps {
 
 interface NvHeaderProps {
   isShown: boolean;
+  doTwoItems: boolean;
 }
 
 const Container = styled.section<ContainerProps>`
-  padding: 0.2rem 1rem;
+  /* padding: 0.2rem 1rem; */
   transition: transform 0.3s, margin-top 0s;
   transform: translateY(-140%);
   height: 100vh;
@@ -42,13 +43,7 @@ const Container = styled.section<ContainerProps>`
       margin-top: -1rem;
       z-index: 700;
     `}
-  /* ${({ showV, isShown }) =>
-    showV &&
-    isShown &&
-    css`
-      z-index: 400;
-      overflow: hidden;
-    `} */
+  
   @media (min-width: 768px) {
     display: none;
   }
@@ -82,7 +77,7 @@ const NewViewContainer = styled.div<NvHeaderProps>`
   align-items: center;
   text-transform: uppercase;
 
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
   position: relative;
   top: -1rem;
   /* position: fixed;
@@ -105,14 +100,22 @@ const NewViewContainer = styled.div<NvHeaderProps>`
     color: red;
   }
   & svg:last-child {
-    display: none;
-    visibility: none;
+    /* display: none;
+    visibility: none; */
+    color: black;
+    /* flex: 1; */
   }
 
   ${({ isShown }) =>
     !isShown &&
     css`
       display: none;
+    `}
+
+  ${({ doTwoItems }) =>
+    doTwoItems &&
+    css`
+      justify-content: center;
     `}
 `;
 export { Container, ListContainer, ListItem, NewViewContainer };

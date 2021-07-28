@@ -4,13 +4,17 @@ import CloseIcon from "@material-ui/icons/Close";
 import { RootState } from "../../../../appStore/store";
 import { useSelector, useDispatch } from "react-redux";
 import { toggleView } from "../../../../features/MobileDropDown/mobileDropDownSlice";
+import { FC } from "react";
 
-const DropMenuToggle = () => {
+interface Props {
+  showCloseOnly?: boolean;
+}
+const DropMenuToggle: FC<Props> = ({ showCloseOnly }) => {
   const isOpen = useSelector((state: RootState) => state.hamburger.isOpen);
   const dispatch = useDispatch();
   return (
     <IconButton onClick={() => dispatch(toggleView())}>
-      {isOpen ? <CloseIcon /> : <MenuIcon />}
+      {showCloseOnly ? <CloseIcon /> : isOpen ? <CloseIcon /> : <MenuIcon />}
     </IconButton>
   );
 };
