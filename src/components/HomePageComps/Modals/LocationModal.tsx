@@ -1,7 +1,12 @@
 import { BackDrop } from "./styled";
+import ModalContents from "./ModalContents";
 
 const LocationModal = () => {
-  return <BackDrop>Location modal !</BackDrop>;
+  return (
+    <BackDrop>
+      <ModalContents />
+    </BackDrop>
+  );
 };
 
 export default LocationModal;

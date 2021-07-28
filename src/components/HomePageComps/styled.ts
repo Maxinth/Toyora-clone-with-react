@@ -4,6 +4,7 @@ const HomeContainer = styled.main`
   width: 100%;
   height: 100vh;
   /* overflow: scroll; */
+  position: relative;
 `;
 const MockBox = styled.div`
   display: flex;
