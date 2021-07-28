@@ -2,6 +2,7 @@ const variantProps = {
   initial: "hidden",
   animate: "visible",
   hover: "hover",
+  exit: "exit",
 };
 
 const pageVariant = (duration: number = 2, delay: number = 0) => {
@@ -17,6 +18,10 @@ const pageVariant = (duration: number = 2, delay: number = 0) => {
         duration: duration,
         delay: delay,
       },
+    },
+
+    exit: {
+      opacity: 0,
     },
   };
 };
