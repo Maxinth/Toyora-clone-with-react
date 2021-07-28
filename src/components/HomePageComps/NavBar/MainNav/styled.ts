@@ -14,12 +14,16 @@ const Container = styled.section`
 
 const Image = styled.img`
   object-fit: contain;
-  width: 50px;
-  height: 50px;
+  /* width: 50px;
+  height: 50px; */
+  width: 40px;
+  height: 40px;
   transition: all 0.2s;
   :first-child {
-    width: 90px;
-    height: 90px;
+    /* width: 90px;
+    height: 90px; */
+    width: 70px;
+    height: 70px;
   }
 
   @media (min-width: 768px) {
@@ -54,7 +58,8 @@ const RightContainer = styled.div`
   justify-content: center;
   align-items: center;
   & svg {
-    font-size: 2.3rem;
+    font-size: 1.5rem;
+    color: #333;
   }
 
   & svg + svg {

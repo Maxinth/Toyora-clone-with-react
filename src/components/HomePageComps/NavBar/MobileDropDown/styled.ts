@@ -16,7 +16,7 @@ const Container = styled.section<ContainerProps>`
   height: 100vh;
   width: 100%;
   overflow: hidden; /* so other contents are hidden */
-  margin-top: 5rem;
+  margin-top: 3rem;
   /* position: relative; */
   position: absolute;
   top: 0;
@@ -55,7 +55,7 @@ const Container = styled.section<ContainerProps>`
 `;
 const ListContainer = styled.ul`
   font-family: "Roboto", sans-serif;
-  padding: 0 2rem;
+  padding: 0 1.5rem;
 `;
 
 const ListItem = styled.li`

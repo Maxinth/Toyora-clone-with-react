@@ -1,10 +1,9 @@
 import styled, { css } from "styled-components";
 import { ListItem } from "../styled";
-// import { BtContainer } from "./VehiclesOptions/styled";
+
 interface AvProps {
   isInView: boolean;
   fullScreen: boolean;
-  // namesOnly?: boolean;
 }
 const AvContainer = styled.section<AvProps>`
   position: absolute;
