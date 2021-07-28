@@ -72,4 +72,5 @@ const ListItem = styled.li`
   }
 `;
 
-export { Nav, LgNavBox, LgNavInner, ListItem };
+const Span = styled.span``;
+export { Nav, LgNavBox, LgNavInner, ListItem, Span };

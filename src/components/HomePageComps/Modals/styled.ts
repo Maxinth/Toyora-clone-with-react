@@ -25,6 +25,7 @@ const Container = styled.div`
   height: 100%;
   max-width: 900px;
   margin: 0 auto;
+  padding: 0.5rem;
   transition: height 0.2s;
   @media (min-width: 768px) {
     height: 70%;
@@ -36,8 +37,15 @@ const ControlBox = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
+  font-family: "Raleway", sans-serif;
+  & svg {
+    font-size: 2.4rem;
+  }
 `;
 
-const Text = styled.p``;
+const Text = styled.p`
+  font-weight: bold;
+  font-size: 1.3rem;
+`;
 
 export { BackDrop, Container, ControlBox, Text };

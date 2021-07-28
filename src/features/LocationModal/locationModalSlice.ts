@@ -12,19 +12,14 @@ export const locationModalSlice = createSlice({
   name: "locationModal",
   initialState,
   reducers: {
-    //show all shoppingTools
-    showLocationModal: (state) => {
-      state.showLocationModal = true;
-    },
-    // return to initial view from all shoppingTools view
-    closeLocationModal: (state) => {
-      state.showLocationModal = false;
+    // toggle the view of the modal
+    toggleModal: (state) => {
+      state.showLocationModal = !state.showLocationModal;
     },
   },
 });
 
 // Action creators are generated for each case reducer function
-export const { showLocationModal, closeLocationModal } =
-  locationModalSlice.actions;
+export const { toggleModal } = locationModalSlice.actions;
 
 export default locationModalSlice.reducer;

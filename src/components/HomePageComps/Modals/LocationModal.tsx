@@ -1,11 +1,20 @@
 import { BackDrop } from "./styled";
 import ModalContents from "./ModalContents";
+import { useSelector } from "react-redux";
+import { RootState } from "../../../appStore/store";
 
 const LocationModal = () => {
+  const isInView = useSelector(
+    (state: RootState) => state.locationModal.showLocationModal
+  );
   return (
-    <BackDrop>
-      <ModalContents />
-    </BackDrop>
+    <>
+      {isInView && (
+        <BackDrop>
+          <ModalContents />
+        </BackDrop>
+      )}
+    </>
   );
 };
 

@@ -42,3 +42,10 @@ In a bid to resolve the material ui icon type issh,  I have converted this file 
 use the Icon components in the array.
 
 */
+
+export const clickCB = (itemName: string, LocationCB: Function): void => {
+  if (itemName === "Set Location") {
+    LocationCB();
+  }
+  return;
+};
