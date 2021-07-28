@@ -5,11 +5,12 @@ import { FC } from "react";
 
 interface Props {
   data: VOption[];
+  namesOnly: boolean;
 }
 
-const OptionsList: FC<Props> = ({ data }) => {
+const OptionsList: FC<Props> = ({ data, namesOnly }) => {
   return (
-    <ItemContainer>
+    <ItemContainer namesOnly={namesOnly}>
       {data.map((item: VOption) => (
         <OptionListItem key={item.mainName} {...item} />
       ))}

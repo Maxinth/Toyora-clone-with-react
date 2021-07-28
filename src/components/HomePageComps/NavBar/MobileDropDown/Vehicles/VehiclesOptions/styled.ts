@@ -1,8 +1,27 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { NewViewContainer } from "../../styled";
 export { AvContainer as Container } from "../styled";
 
-const ItemContainer = styled.ul`
+interface ItemBox {
+  namesOnly: boolean;
+}
+
+const Name = styled.p`
+  text-transform: capitalize;
+`;
+
+const BtContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 20px;
+  & > ${Name} {
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
+`;
+
+const ItemContainer = styled.ul<ItemBox>`
   font-family: "Lato", sans-serif;
   padding: 0.5rem 2rem;
   & + ${NewViewContainer} {
@@ -11,10 +30,14 @@ const ItemContainer = styled.ul`
     padding: 1rem;
     justify-content: center;
   }
-`;
 
-const Name = styled.p`
-  text-transform: capitalize;
+  ${({ namesOnly }) =>
+    namesOnly &&
+    css`
+      & ${BtContainer} {
+        bottom: unset;
+      }
+    `}
 `;
 
 const ListItem = styled.li`
@@ -52,17 +75,6 @@ const Image = styled.img`
     width: 100%;
     font-size: 0.9rem;
     /* font-weight: 300; */
-  }
-`;
-
-const BtContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  bottom: 20px;
-  & > ${Name} {
-    font-weight: 700;
-    font-size: 1.1rem;
   }
 `;
 

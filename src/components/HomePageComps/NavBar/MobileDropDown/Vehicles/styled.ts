@@ -4,7 +4,7 @@ import { ListItem } from "../styled";
 interface AvProps {
   isInView: boolean;
   fullScreen: boolean;
-  namesOnly?: boolean;
+  // namesOnly?: boolean;
 }
 const AvContainer = styled.section<AvProps>`
   position: absolute;
@@ -20,6 +20,7 @@ const AvContainer = styled.section<AvProps>`
   overflow: hidden;
   padding-top: 1rem;
   /* z-index: 300; */
+
   ${({ isInView }) =>
     isInView &&
     css`
@@ -36,6 +37,8 @@ const AvContainer = styled.section<AvProps>`
       z-index: 800;
       /* margin-top: 1rem; */
     `}
+
+    
 
     
 
