@@ -33,7 +33,7 @@ export const data: VOption[] = [
   },
   {
     initName: "",
-    imageSrc: Img("uvp-"),
+    imageSrc: Img("uvp-tacoma-trailspecialedition"),
     price: "",
     mainName: "Tacoma Trail Special Edition",
     firstPriceText: "",
@@ -43,7 +43,7 @@ export const data: VOption[] = [
   },
   {
     initName: "",
-    imageSrc: Img("uvp-"),
+    imageSrc: Img("uvp-tacoma-trdpro"),
     price: "",
     mainName: "Tacoma TRD Pro",
     firstPriceText: "",
