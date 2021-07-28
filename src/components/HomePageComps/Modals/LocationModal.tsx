@@ -1,7 +1,7 @@
-import React from "react";
+import { BackDrop } from "./styled";
 
 const LocationModal = () => {
-  return <div>Location modal !</div>;
+  return <BackDrop>Location modal !</BackDrop>;
 };
 
 export default LocationModal;
