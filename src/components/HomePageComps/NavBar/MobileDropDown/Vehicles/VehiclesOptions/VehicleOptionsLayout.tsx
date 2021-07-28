@@ -9,6 +9,7 @@ interface Props {
   data: VOption[];
   isInView: boolean;
   isBottomHeaderShown?: boolean;
+  namesOnly?: boolean;
 }
 
 const VehicleOptionsLayout: FC<Props> = ({
@@ -16,11 +17,12 @@ const VehicleOptionsLayout: FC<Props> = ({
   data,
   isInView,
   isBottomHeaderShown = true,
+  namesOnly = false,
 }) => {
   return (
     <Container isInView={isInView} fullScreen={isInView}>
       <NewViewHeader title={topTitle} />
-      <OptionsList data={data} namesOnly={isBottomHeaderShown} />
+      <OptionsList data={data} namesOnly={namesOnly} />
       <NewViewHeader
         title="Back to All Vehicles"
         isShown={isBottomHeaderShown}

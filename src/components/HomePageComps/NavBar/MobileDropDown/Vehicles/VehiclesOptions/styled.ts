@@ -21,6 +21,21 @@ const BtContainer = styled.div`
   }
 `;
 
+const ListItem = styled.li`
+  display: flex;
+  flex-direction: column;
+  line-height: 1.7;
+  padding: 0.5rem 2rem 0.5rem;
+  border-bottom: 1px solid rgb(216, 216, 216);
+  > * {
+    line-height: inherit;
+  }
+
+  & > ${Name} {
+    font-weight: 500;
+  }
+`;
+
 const ItemContainer = styled.ul<ItemBox>`
   font-family: "Lato", sans-serif;
   padding: 0.5rem 2rem;
@@ -40,20 +55,6 @@ const ItemContainer = styled.ul<ItemBox>`
     `}
 `;
 
-const ListItem = styled.li`
-  display: flex;
-  flex-direction: column;
-  line-height: 1.7;
-  padding: 0.5rem 2rem 0.5rem;
-  border-bottom: 1px solid rgb(216, 216, 216);
-  > * {
-    line-height: inherit;
-  }
-
-  & > ${Name} {
-    font-weight: 500;
-  }
-`;
 const Price = styled.span``;
 const Super = styled.sup`
   color: red;

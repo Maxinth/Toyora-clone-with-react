@@ -10,6 +10,7 @@ const ShowSpecialEditions = () => {
       data={data}
       topTitle="special editions"
       isBottomHeaderShown={false}
+      namesOnly={true}
     />
   );
 };
