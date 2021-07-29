@@ -9,11 +9,11 @@ const LocationModal = () => {
   const isInView = useSelector(
     (state: RootState) => state.locationModal.showLocationModal
   );
-  const { variantProps, pageVariant } = useVariants();
+  const { variantProps, modalVariant } = useVariants();
   return (
     <AnimatePresence>
       {isInView && (
-        <BackDrop variants={pageVariant(1, 0)} {...variantProps}>
+        <BackDrop variants={modalVariant(.5, 0)} {...variantProps}>
           <ModalContents />
         </BackDrop>
       )}

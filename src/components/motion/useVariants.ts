@@ -5,7 +5,7 @@ const variantProps = {
   exit: "exit",
 };
 
-const pageVariant = (duration: number = 2, delay: number = 0) => {
+const modalVariant = (duration: number = 2, delay: number = 0) => {
   return {
     hidden: {
       opacity: 0,
@@ -13,6 +13,7 @@ const pageVariant = (duration: number = 2, delay: number = 0) => {
 
     visible: {
       opacity: 1,
+       background: 'rgba(0, 0, 0, 0.7)',
       transition: {
         type: "tween",
         duration: duration,
@@ -22,6 +23,13 @@ const pageVariant = (duration: number = 2, delay: number = 0) => {
 
     exit: {
       opacity: 0,
+      // scale:0,
+       background: 'rgba(0, 0, 0, 0)',
+      transition: {
+        type: "tween",
+        duration: duration ,
+        delay: delay,
+      },
     },
   };
 };
@@ -41,6 +49,6 @@ export const useVariants = () => {
   return {
     variantProps,
     itemHover,
-    pageVariant,
+   modalVariant,
   };
 };

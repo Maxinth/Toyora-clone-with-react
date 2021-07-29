@@ -1,6 +1,10 @@
-import styled from "styled-components";
+import styled,{css} from "styled-components";
 import { motion } from "framer-motion";
 
+
+interface TextProps {
+  normal?:boolean;
+}
 const BackDrop = styled(motion.div)`
   position: absolute;
   left: 0;
@@ -8,7 +12,7 @@ const BackDrop = styled(motion.div)`
   top: 0;
   bottom: 0;
   /* height: 100vh; */
-  background: rgba(0, 0, 0, 0.7);
+  /* background: rgba(0, 0, 0, 0.7); */
   z-index: 900;
   cursor: pointer;
   padding: 1rem;
@@ -44,9 +48,14 @@ const ControlBox = styled.div`
   }
 `;
 
-const Text = styled.p`
+const Text = styled.p<TextProps>`
   font-weight: bold;
   font-size: 1.3rem;
+  ${({normal}) => normal && css`
+  font-weight:normal
+  font-size: 1rem;
+  `}
 `;
+
 
 export { BackDrop, Container, ControlBox, Text };
