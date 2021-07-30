@@ -1,14 +1,17 @@
-import { ControlBox, Text } from "./styled";
-import HighlightOffIcon from "@material-ui/icons/HighlightOff";
+import { ControlBox, Text, IconContainer } from "./styled";
+// import HighlightOffIcon from "@material-ui/icons/HighlightOff";
 import { useDispatch } from "react-redux";
+import CloseIcon from "@material-ui/icons/Close";
 import { toggleModal } from "../../../features/LocationModal/locationModalSlice";
 
 const ModalTopControl = () => {
   const dispatch = useDispatch();
   return (
     <ControlBox>
-      <Text>Your Location</Text>
-      <HighlightOffIcon onClick={() => dispatch(toggleModal())} />
+      <Text control>Your Location</Text>
+      <IconContainer onClick={() => dispatch(toggleModal())}>
+        <CloseIcon />
+      </IconContainer>
     </ControlBox>
   );
 };
