@@ -3,13 +3,13 @@ import { createSlice } from "@reduxjs/toolkit";
 export interface locationModalAndSearchState {
   showLocationModal: boolean;
   showSearchBox: boolean;
-  otherLinks: boolean;
+  otherLinksClicked: boolean;
 }
 
 const initialState: locationModalAndSearchState = {
   showLocationModal: false,
   showSearchBox: false,
-  otherLinks: false, // handles clicks to other links asides search and icon
+  otherLinksClicked: false, // handles clicks to other links asides search and icon - just tracks if they are clicked.
 };
 
 export const locationModalSlice = createSlice({
@@ -27,18 +27,20 @@ export const locationModalSlice = createSlice({
       state.showSearchBox = !state.showSearchBox;
     },
 
-    defaultClickAction: (state) => {
-      state.otherLinks = !state.otherLinks;
+    otherLinksWereClicked: (state) => {
+      state.otherLinksClicked = true;
     },
   },
 });
 
 // Action creators are generated for each case reducer function
-export const { toggleModal, toggleSearchBoxView, defaultClickAction } =
+export const { toggleModal, toggleSearchBoxView, otherLinksWereClicked } =
   locationModalSlice.actions;
 
 export default locationModalSlice.reducer;
 
-/* other links has been added to account for clicks on other links 
-a kind of dummy state.
+/* 
+  Other links has been added to account for clicks on other links 
+  a kind of dummy state - so the functionality doesn't break as the links also need a handler to 
+  take care of click actions to them.
 */
