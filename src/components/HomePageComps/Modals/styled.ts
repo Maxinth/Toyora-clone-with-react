@@ -135,13 +135,27 @@ const TextBox = styled.div`
   align-items: center;
   margin: 2rem 0 1rem;
   padding: 0 1rem;
+  width: 100%;
+  @media (max-width: 280px) {
+    padding: 0 4rem;
+  }
 `;
 const Input = styled.input`
-  padding: 1rem;
+  padding: 1rem 0.5rem;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   outline: none;
   border: 1px solid #333;
+  background-color: ghostwhite;
+  &::placeholder {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.1rem;
+  }
+  @media (max-width: 280px) {
+    padding: 0.2rem 0.4rem;
+  }
 `;
 const Submit = styled.div`
   padding: 1rem;
@@ -152,6 +166,9 @@ const Submit = styled.div`
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   letter-spacing: 1.7;
+  @media (max-width: 280px) {
+    padding: 0.2rem 0.4rem;
+  }
 `;
 
 const Box = styled.div<BoxProps>`

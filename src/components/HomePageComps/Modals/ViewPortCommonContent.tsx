@@ -8,7 +8,7 @@ const ViewPortCommonContent = () => {
         you
       </Text>
       <TextBox>
-        <Input type="text" />
+        <Input type="text" placeholder="zip code" />
         <Submit>submit</Submit>
       </TextBox>
     </>
