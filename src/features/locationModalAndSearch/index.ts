@@ -17,6 +17,8 @@ export const locationModalSlice = createSlice({
     // toggle the view of the modal
     toggleModal: (state) => {
       state.showLocationModal = !state.showLocationModal;
+      // close searchBox if already in view when modal is clicked.
+      state.showSearchBox = false;
     },
 
     toggleSearchBoxView: (state) => {
