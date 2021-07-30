@@ -2,7 +2,7 @@ import { RightContainer } from "./styled";
 import LocationOnIcon from "@material-ui/icons/LocationOn";
 import DropMenuToggle from "./DropMenuToggle";
 import { useDispatch } from "react-redux";
-import { toggleModal } from "../../../../features/LocationModal/locationModalSlice";
+import { toggleModal } from "../../../../features/locationModalAndSearch";
 
 const RightOptionsOnMobile = () => {
   const dispatch = useDispatch();

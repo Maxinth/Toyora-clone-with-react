@@ -2,7 +2,7 @@ import { LgNavInner, ListItem } from "./styled";
 import { data, clickCB } from "./navOnLgData";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { toggleModal } from "../../../features/LocationModal/locationModalSlice";
+import { toggleModal } from "../../../features/locationModalAndSearch";
 
 const LgTopItems = () => {
   const dispatch = useDispatch();

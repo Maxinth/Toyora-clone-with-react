@@ -4,7 +4,7 @@ import vehiclesReducer from "../features/MobileDropDown/vehiclesSlice";
 import shoppingToolsReducer from "../features/MobileDropDown/shoppingToolsSlice";
 import helpfulLinksReducer from "../features/MobileDropDown/helpFulLinksSlice";
 import ownersReducer from "../features/MobileDropDown/ownersSlice";
-import locationModalReducer from "../features/LocationModal/locationModalSlice";
+import locationModalReducer from "../features/locationModalAndSearch";
 
 export const store = configureStore({
   reducer: {

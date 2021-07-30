@@ -153,6 +153,9 @@ const Input = styled.input`
     font-family: "Raleway", sans-serif;
     font-size: 1.1rem;
   }
+  &:focus {
+    border: 1px solid teal;
+  }
   @media (max-width: 280px) {
     padding: 0.2rem 0.4rem;
   }

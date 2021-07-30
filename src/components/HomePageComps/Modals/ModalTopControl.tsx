@@ -1,7 +1,7 @@
 import { ControlBox, Text, IconContainer } from "./styled";
 import { useDispatch } from "react-redux";
 import CloseIcon from "@material-ui/icons/Close";
-import { toggleModal } from "../../../features/LocationModal/locationModalSlice";
+import { toggleModal } from "../../../features/locationModalAndSearch";
 
 const ModalTopControl = () => {
   const dispatch = useDispatch();
