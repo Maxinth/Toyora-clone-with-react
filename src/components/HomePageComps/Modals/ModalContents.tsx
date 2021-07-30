@@ -1,20 +1,16 @@
-import { Container, Text, Box } from "./styled";
+import { Container } from "./styled";
 import ModalTopControl from "./ModalTopControl";
-import LocationOnIcon from "@material-ui/icons/LocationOn";
 import ViewPortCommonContent from "./ViewPortCommonContent";
+import LgTopText from "./LgTopText";
+import SmVeiwPortBottomText from "./SmVeiwPortBottomText";
+
 const ModalContents = () => {
   return (
     <Container>
       <ModalTopControl />
-      <Box lgShow>
-        <LocationOnIcon />
-        <Text lg>Set your location</Text>
-      </Box>
+      <LgTopText />
       <ViewPortCommonContent />
-      <Box lgHide>
-        <Text normal>OR</Text>
-        <Text>find a dealer</Text>
-      </Box>
+      <SmVeiwPortBottomText />
     </Container>
   );
 };

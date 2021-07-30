@@ -1,5 +1,4 @@
 import { ControlBox, Text, IconContainer } from "./styled";
-// import HighlightOffIcon from "@material-ui/icons/HighlightOff";
 import { useDispatch } from "react-redux";
 import CloseIcon from "@material-ui/icons/Close";
 import { toggleModal } from "../../../features/LocationModal/locationModalSlice";
