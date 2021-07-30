@@ -46,7 +46,8 @@ use the Icon components in the array.
 export const clickCB = (
   itemName: string,
   LocationCB: Function,
-  searchBoxCB: Function
+  searchBoxCB: Function,
+  defaultClickAction: Function
 ): void => {
   if (itemName === "Set Location") {
     //  the handler doesn't seem to work without the return statement I have added -
@@ -58,5 +59,7 @@ export const clickCB = (
 
     return searchBoxCB();
   }
-  return;
+  // added defaultClickAction to fire when any other link is clicked other than the two
+  // specified above so the functionalty doesn't break.
+  return defaultClickAction();
 };

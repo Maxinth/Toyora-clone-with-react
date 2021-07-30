@@ -5,6 +5,7 @@ import { useDispatch } from "react-redux";
 import {
   toggleModal,
   toggleSearchBoxView,
+  defaultClickAction,
 } from "../../../features/locationModalAndSearch";
 
 const LgTopItems = () => {
@@ -18,7 +19,14 @@ const LgTopItems = () => {
           <ListItem
             key={itemName}
             onClick={() =>
-              dispatch(clickCB(itemName, toggleModal, toggleSearchBoxView))
+              dispatch(
+                clickCB(
+                  itemName,
+                  toggleModal,
+                  toggleSearchBoxView,
+                  defaultClickAction
+                )
+              )
             }
           >
             <Link to="/">{itemName}</Link>
