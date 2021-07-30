@@ -9,6 +9,7 @@ interface TextProps {
 
 interface BoxProps {
   lgHide?: boolean;
+  lgShow?: boolean;
 }
 
 const BackDrop = styled(motion.div)`
@@ -60,6 +61,7 @@ const ControlBox = styled.div`
   margin-bottom: 3rem;
   @media (min-width: 768px) {
     justify-content: flex-end;
+    margin-bottom: 1rem;
   }
 `;
 
@@ -101,6 +103,9 @@ const Text = styled.p<TextProps>`
         text-transform: uppercase;
         color: grey;
       }
+      @media (min-width: 768px) {
+        font-size: 0.8rem;
+      } ;
     `}
 
   ${({ lg }) =>
@@ -111,6 +116,7 @@ const Text = styled.p<TextProps>`
         display: block;
         text-transform: uppercase;
         font-weight: bold;
+        font-size: 3rem;
       }
     `}
   ${({ control }) =>
@@ -153,8 +159,9 @@ const Box = styled.div<BoxProps>`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  line-height: 1.7;
   > svg {
-    font-size: 5rem;
+    font-size: 3rem;
     color: red;
   }
 
@@ -163,6 +170,14 @@ const Box = styled.div<BoxProps>`
     css`
       @media (min-width: 768px) {
         display: none;
+      }
+    `}
+  ${({ lgShow }) =>
+    lgShow &&
+    css`
+      display: none;
+      @media (min-width: 768px) {
+        display: flex;
       }
     `}
 `;
