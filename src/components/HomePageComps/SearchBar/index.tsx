@@ -1,29 +1,32 @@
 import CloseIcon from "@material-ui/icons/Close";
-import { InputBox, Container, Text, Box, InnerBox } from "./styled";
+import { InputBox, MotionContainer, Text, Box, InnerBox } from "./styled";
 import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "../../../appStore/store";
 import { toggleSearchBoxView } from "../../../features/locationModalAndSearch";
+import { AnimatePresence } from "framer-motion";
+import { useVariants } from "../../motion/useVariants";
 
 const SearchBar = () => {
   const isInView = useSelector(
     (state: RootState) => state.locationModalAndSearchBox.showSearchBox
   );
 
+  const { variantProps, searchBoxVariant } = useVariants();
   const dispatch = useDispatch();
   return (
-    <>
+    <AnimatePresence>
       {isInView && (
-        <Container>
+        <MotionContainer variants={searchBoxVariant(1, 0)} {...variantProps}>
           <InnerBox>
             <Text>Search:</Text>
             <Box>
-              <InputBox type="text" placeholder="type here to search" />
+              <InputBox type="text" placeholder="Type here to search" />
               <CloseIcon onClick={() => dispatch(toggleSearchBoxView())} />
             </Box>
           </InnerBox>
-        </Container>
+        </MotionContainer>
       )}
-    </>
+    </AnimatePresence>
   );
 };
 

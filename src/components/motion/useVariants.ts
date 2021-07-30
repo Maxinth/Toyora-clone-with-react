@@ -13,7 +13,7 @@ const modalVariant = (duration: number = 2, delay: number = 0) => {
 
     visible: {
       opacity: 1,
-       background: 'rgba(0, 0, 0, 0.7)',
+      background: "rgba(0, 0, 0, 0.7)",
       transition: {
         type: "tween",
         duration: duration,
@@ -24,10 +24,37 @@ const modalVariant = (duration: number = 2, delay: number = 0) => {
     exit: {
       opacity: 0,
       // scale:0,
-       background: 'rgba(0, 0, 0, 0)',
+      background: "rgba(0, 0, 0, 0)",
       transition: {
         type: "tween",
-        duration: duration ,
+        duration: duration,
+        delay: delay,
+      },
+    },
+  };
+};
+const searchBoxVariant = (duration: number = 2, delay: number = 0) => {
+  return {
+    hidden: {
+      width: "0px",
+      opacity: 0,
+    },
+
+    visible: {
+      width: "100%",
+      opacity: 1,
+      transition: {
+        type: "tween",
+        duration: duration,
+        delay: delay,
+      },
+    },
+
+    exit: {
+      opacity: 0,
+      transition: {
+        type: "tween",
+        duration: duration,
         delay: delay,
       },
     },
@@ -49,6 +76,7 @@ export const useVariants = () => {
   return {
     variantProps,
     itemHover,
-   modalVariant,
+    modalVariant,
+    searchBoxVariant,
   };
 };
