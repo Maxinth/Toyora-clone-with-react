@@ -7,13 +7,13 @@ import { AnimatePresence } from "framer-motion";
 
 const LocationModal = () => {
   const isInView = useSelector(
-    (state: RootState) => state.locationModal.showLocationModal
+    (state: RootState) => state.locationModalAndSearchBox.showLocationModal
   );
   const { variantProps, modalVariant } = useVariants();
   return (
     <AnimatePresence>
       {isInView && (
-        <BackDrop variants={modalVariant(.5, 0)} {...variantProps}>
+        <BackDrop variants={modalVariant(0.5, 0)} {...variantProps}>
           <ModalContents />
         </BackDrop>
       )}
