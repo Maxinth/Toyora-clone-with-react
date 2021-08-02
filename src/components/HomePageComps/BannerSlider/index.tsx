@@ -1,5 +1,5 @@
 import { Container, Image } from "./styled";
-import ImgOne from "../../../../banner/venza.png";
+import ImgOne from "../../../assets/venza.png";
 
 const BannerSlider = () => {
   return (

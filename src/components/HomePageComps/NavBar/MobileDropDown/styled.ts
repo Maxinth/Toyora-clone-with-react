@@ -16,7 +16,7 @@ const Container = styled.section<ContainerProps>`
   height: 100vh;
   width: 100%;
   overflow: hidden; /* so other contents are hidden */
-  margin-top: 3rem;
+  margin-top: 1.4rem;
   /* position: relative; */
   position: absolute;
   top: 0;

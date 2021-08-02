@@ -3,6 +3,7 @@ import Navbar from "./NavBar";
 import MobileDropDown from "./NavBar/MobileDropDown";
 import LocationModal from "./Modals/LocationModal";
 import SearchBar from "./SearchBar";
+import BannerSlider from "./BannerSlider";
 
 const HomePage = () => {
   return (
@@ -11,6 +12,7 @@ const HomePage = () => {
       <SearchBar />
       <Navbar />
       <MobileDropDown />
+      <BannerSlider />
     </HomeContainer>
   );
 };
