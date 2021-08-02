@@ -1,10 +1,12 @@
 import { useRef, useEffect } from "react";
 
-const useInputFocus = () => {
+const useInputFocus = (condition: boolean) => {
   const inputRef = useRef<HTMLInputElement | null>(null);
 
   useEffect(() => {
-    inputRef.current?.focus();
+    if (condition) {
+      inputRef.current?.focus();
+    }
   });
 
   return { inputRef };

@@ -11,10 +11,10 @@ const SearchBar = () => {
   const isInView = useSelector(
     (state: RootState) => state.locationModalAndSearchBox.showSearchBox
   );
-  const { inputRef } = useInputFocus();
-
+  const { inputRef } = useInputFocus(isInView);
   const { variantProps, searchBoxVariant } = useVariants();
   const dispatch = useDispatch();
+
   return (
     <AnimatePresence>
       {isInView && (

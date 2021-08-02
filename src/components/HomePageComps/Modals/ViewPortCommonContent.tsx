@@ -1,8 +1,14 @@
 import { TextBox, Input, Submit, Text } from "./styled";
 import useInputFocus from "../useInputFocus";
-
+import { useSelector } from "react-redux";
+import { RootState } from "../../../appStore/store";
 const ViewPortCommonContent = () => {
-  const { inputRef } = useInputFocus();
+  const isInView = useSelector(
+    (state: RootState) => state.locationModalAndSearchBox.showLocationModal
+  );
+
+  const { inputRef } = useInputFocus(isInView);
+
   return (
     <>
       <Text normal>
