@@ -16,7 +16,7 @@ const MotionContainer = styled(motion.section)`
   margin-top: 3.5rem;
   @media (min-width: 768px) {
     height: 100vh;
-    margin-top: 7rem;
+    margin-top: 6rem;
   }
 `;
 

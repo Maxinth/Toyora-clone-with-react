@@ -16,18 +16,13 @@ const Container = styled.section<ContainerProps>`
   height: 100vh;
   width: 100%;
   overflow: hidden; /* so other contents are hidden */
-  margin-top: 1.4rem;
-  /* position: relative; */
-  position: absolute;
+  margin-top: 2.9rem;
+  position: relative;
+  /* position: absolute; */
   top: 0;
   left: 0;
   right: 0;
   z-index: 400;
-  /* position: relative;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 600; */
 
   ${({ isShown }) =>
     isShown &&

@@ -6,7 +6,7 @@ interface AvProps {
   fullScreen: boolean;
 }
 const AvContainer = styled.section<AvProps>`
-  /* position: absolute; */
+  position: absolute;
   transform: translateX(100%);
   transition: transform 0.5s, opacity 0.8s;
   opacity: 0;
