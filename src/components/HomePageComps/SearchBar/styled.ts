@@ -48,7 +48,7 @@ const InputBox = styled.input`
 
   &:focus {
     border: 1px dashed black;
-    border-bottom: 1px solid red;
+    /* border-bottom: 1px solid red; */
   }
   @media (min-width: 768px) {
     & + svg {

@@ -3,7 +3,6 @@ import useInputFocus from "../useInputFocus";
 
 const ViewPortCommonContent = () => {
   const { inputRef } = useInputFocus();
-
   return (
     <>
       <Text normal>
