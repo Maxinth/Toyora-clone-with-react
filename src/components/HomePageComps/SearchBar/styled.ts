@@ -13,7 +13,7 @@ const MotionContainer = styled(motion.section)`
   width: 100%;
   padding: 1rem;
   font-family: "Raleway", sans-serif;
-  margin-top: 3.5rem;
+  margin-top: 1.4rem;
   @media (min-width: 768px) {
     height: 100vh;
     margin-top: 6rem;

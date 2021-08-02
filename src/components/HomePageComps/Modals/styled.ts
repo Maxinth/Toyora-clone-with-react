@@ -18,7 +18,8 @@ const BackDrop = styled(motion.div)`
   right: 0;
   top: 0;
   bottom: 0;
-  /* height: 100vh; */
+  height: 100%;
+  overflow: hidden;
   //set background in framer variant
   /* background: rgba(0, 0, 0, 0.7); */
   z-index: 900;
