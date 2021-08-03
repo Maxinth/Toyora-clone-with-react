@@ -1,5 +1,4 @@
 import styled, { css } from "styled-components";
-
 interface ContainerProps {
   isShown: boolean;
   showV: boolean;
@@ -16,7 +15,7 @@ const Container = styled.section<ContainerProps>`
   height: 100vh;
   width: 100%;
   overflow: hidden; /* so other contents are hidden */
-  margin-top: 2.9rem;
+  margin-top: 2.4rem;
   position: relative;
   /* position: absolute; */
   top: 0;
