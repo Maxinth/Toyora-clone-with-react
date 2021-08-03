@@ -6,46 +6,35 @@ const BannerSlider = () => {
     <Container>
       <Image src={ImgOne} alt="venza" />
       <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
-        eius repudiandae obcaecati laboriosam iure repellendus ab eaque
-        voluptatem! Quidem incidunt perspiciatis deleniti quae iusto tenetur
-        expedita temporibus laboriosam sunt impedit possimus neque, ex nesciunt
-        excepturi provident quod officiis quia vitae! Numquam eaque recusandae
-        ex consequuntur obcaecati ut quos unde temporibus iusto facilis nihil
-        necessitatibus in, deserunt sint excepturi perferendis consectetur
-        libero hic animi nesciunt, rem fuga? Quae blanditiis veritatis vitae
-        laboriosam cumque, quod voluptate. Perferendis nam ea, minima molestiae
-        excepturi similique numquam ipsam sapiente aliquid atque maiores debitis
-        voluptas soluta commodi aspernatur a temporibus voluptatum quas
-        voluptatibus consequatur ad unde nisi, cupiditate sint! Laudantium hic
-        et doloremque dolores at alias, delectus laboriosam error dolor nesciunt
-        consequatur asperiores atque nisi voluptatem natus nulla cupiditate
-        tempore accusantium pariatur fugit reiciendis id expedita exercitationem
-        perspiciatis? Officia mollitia dolores ut nemo voluptatem quasi iusto
-        necessitatibus nisi ex facere molestiae fuga soluta eos voluptatibus
-        excepturi neque, eaque sapiente sit pariatur, laudantium ducimus ad
-        blanditiis. Consequatur pariatur aliquam, eaque est hic voluptates
-        voluptatem libero expedita vitae repellendus non, ex quidem modi alias
-        eius voluptatibus debitis! Reprehenderit nemo sequi veritatis rem
-        quibusdam repellat, earum ipsam dolore eum, totam ex quasi perspiciatis
-        dolorem doloremque est, possimus quia! Soluta, doloremque voluptate
-        doloribus modi maxime omnis a nisi numquam assumenda laborum! Ad fuga
-        eligendi temporibus, rem eos et dolore ipsum laboriosam fugit quaerat
-        blanditiis earum recusandae repellendus. Dignissimos quaerat soluta est
-        odit molestiae molestias dolorum! Sit fugit fuga pariatur in, assumenda
-        facilis. Ea ab ratione dolorum. Iure nam rerum beatae recusandae
-        maiores, hic cupiditate explicabo ullam eius quia provident veritatis
-        consectetur neque vitae ipsa corporis obcaecati dolore illum tempore.
-        Corrupti expedita quod, ab, laudantium quam rem libero ipsum accusamus
-        iste tenetur, aut saepe ex corporis quia optio. At recusandae a, tempore
-        reprehenderit exercitationem porro aliquam laborum obcaecati, iusto
-        sapiente sequi ad! Delectus totam optio sit facere quaerat quibusdam
-        expedita sequi, dignissimos beatae omnis. Distinctio veritatis ut ullam
-        doloribus hic harum inventore quod perferendis earum. Expedita et
-        distinctio, molestiae nemo ullam consequuntur vero omnis at fugiat
-        molestias! Aperiam magnam ducimus tenetur deleniti praesentium quod cum
-        aliquid fuga impedit eos, iusto blanditiis, soluta quia illo nesciunt id
-        velit non earum saepe corporis. Sunt laboriosam quo similique, laborum
+        unde nisi, cupiditate sint! Laudantium hic et doloremque dolores at
+        alias, delectus laboriosam error dolor nesciunt consequatur asperiores
+        atque nisi voluptatem natus nulla cupiditate tempore accusantium
+        pariatur fugit reiciendis id expedita exercitationem perspiciatis?
+        Officia mollitia dolores ut nemo voluptatem quasi iusto necessitatibus
+        nisi ex facere molestiae fuga soluta eos voluptatibus excepturi neque,
+        eaque sapiente sit pariatur, laudantium ducimus ad blanditiis.
+        Consequatur pariatur aliquam, eaque est hic voluptates voluptatem libero
+        expedita vitae repellendus non, ex quidem modi alias eius voluptatibus
+        debitis! Reprehenderit nemo sequi veritatis rem quibusdam repellat,
+        earum ipsam dolore eum, totam ex quasi perspiciatis dolorem doloremque
+        est, possimus quia! Soluta, doloremque voluptate doloribus modi maxime
+        omnis a nisi numquam assumenda laborum! Ad fuga eligendi temporibus, rem
+        eos et dolore ipsum laboriosam fugit quaerat blanditiis earum recusandae
+        repellendus. Dignissimos quaerat soluta est odit molestiae molestias
+        dolorum! Sit fugit fuga pariatur in, assumenda facilis. Ea ab ratione
+        dolorum. Iure nam rerum beatae recusandae maiores, hic cupiditate
+        explicabo ullam eius quia provident veritatis consectetur neque vitae
+        ipsa corporis obcaecati dolore illum tempore. Corrupti expedita quod,
+        ab, laudantium quam rem libero ipsum accusamus iste tenetur, aut saepe
+        ex corporis quia optio. At recusandae a, tempore reprehenderit
+        exercitationem porro aliquam laborum obcaecati, iusto sapiente sequi ad!
+        Delectus totam optio sit facere quaerat quibusdam expedita sequi,
+        dignissimos beatae omnis. Distinctio veritatis ut ullam doloribus hic
+        harum inventore quod perferendis earum. Expedita et distinctio,
+        molestiae nemo ullam consequuntur vero omnis at fugiat molestias!
+        Aperiam magnam ducimus tenetur deleniti praesentium quod cum aliquid
+        fuga impedit eos, iusto blanditiis, soluta quia illo nesciunt id velit
+        non earum saepe corporis. Sunt laboriosam quo similique, laborum
         deleniti ipsam, mollitia iure officiis harum, saepe et deserunt vel non.
         Debitis et illo quos velit tempora. Consectetur, qui ratione, corrupti
         officia iusto vitae quasi quisquam dolorem similique, iure ut.
